@@ -1,0 +1,1334 @@
+2015-11-18 05:45:04.227+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 7 or OpenJDK(TM) 7.
+2015-11-18 05:45:04.251+0000 INFO  [o.n.k.InternalAbstractGraphDatabase]: No locking implementation specified, defaulting to 'community'
+2015-11-18 05:45:04.345+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- INITIALIZED diagnostics START ---
+2015-11-18 05:45:04.347+0000 INFO  [o.n.k.i.DiagnosticsManager]: Neo4j Kernel properties:
+2015-11-18 05:45:04.348+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.propertystore.db.strings.mapped_memory=188M
+2015-11-18 05:45:04.348+0000 INFO  [o.n.k.i.DiagnosticsManager]: ephemeral=false
+2015-11-18 05:45:04.348+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.nodestore.db.mapped_memory=61M
+2015-11-18 05:45:04.348+0000 INFO  [o.n.k.i.DiagnosticsManager]: store_dir=target/hello.db
+2015-11-18 05:45:04.348+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.propertystore.db.arrays.mapped_memory=213M
+2015-11-18 05:45:04.349+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.propertystore.db.mapped_memory=221M
+2015-11-18 05:45:04.349+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.relationshipstore.db.mapped_memory=271M
+2015-11-18 05:45:04.350+0000 INFO  [o.n.k.i.DiagnosticsManager]: Diagnostics providers:
+2015-11-18 05:45:04.350+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.kernel.configuration.Config
+2015-11-18 05:45:04.350+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.kernel.info.DiagnosticsManager
+2015-11-18 05:45:04.350+0000 INFO  [o.n.k.i.DiagnosticsManager]: SYSTEM_MEMORY
+2015-11-18 05:45:04.350+0000 INFO  [o.n.k.i.DiagnosticsManager]: JAVA_MEMORY
+2015-11-18 05:45:04.350+0000 INFO  [o.n.k.i.DiagnosticsManager]: OPERATING_SYSTEM
+2015-11-18 05:45:04.350+0000 INFO  [o.n.k.i.DiagnosticsManager]: JAVA_VIRTUAL_MACHINE
+2015-11-18 05:45:04.350+0000 INFO  [o.n.k.i.DiagnosticsManager]: CLASSPATH
+2015-11-18 05:45:04.350+0000 INFO  [o.n.k.i.DiagnosticsManager]: LIBRARY_PATH
+2015-11-18 05:45:04.350+0000 INFO  [o.n.k.i.DiagnosticsManager]: SYSTEM_PROPERTIES
+2015-11-18 05:45:04.351+0000 INFO  [o.n.k.i.DiagnosticsManager]: NETWORK
+2015-11-18 05:45:04.351+0000 INFO  [o.n.k.i.DiagnosticsManager]: System memory information:
+2015-11-18 05:45:04.353+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total Physical memory: 15,91 GB
+2015-11-18 05:45:04.353+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free Physical memory: 9,87 GB
+2015-11-18 05:45:04.353+0000 INFO  [o.n.k.i.DiagnosticsManager]: Committed virtual memory: 1,00 GB
+2015-11-18 05:45:04.353+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total swap space: 31,91 GB
+2015-11-18 05:45:04.353+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free swap space: 24,40 GB
+2015-11-18 05:45:04.355+0000 INFO  [o.n.k.i.DiagnosticsManager]: JVM memory information:
+2015-11-18 05:45:04.355+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free  memory: 285,19 MB
+2015-11-18 05:45:04.355+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total memory: 665,50 MB
+2015-11-18 05:45:04.355+0000 INFO  [o.n.k.i.DiagnosticsManager]: Max   memory: 3,54 GB
+2015-11-18 05:45:04.355+0000 INFO  [o.n.k.i.DiagnosticsManager]: Garbage Collector: PS Scavenge: [PS Eden Space, PS Survivor Space]
+2015-11-18 05:45:04.355+0000 INFO  [o.n.k.i.DiagnosticsManager]: Garbage Collector: PS MarkSweep: [PS Eden Space, PS Survivor Space, PS Old Gen]
+2015-11-18 05:45:04.356+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Code Cache (Non-heap memory): committed=12,31 MB, used=12,23 MB, max=240,00 MB, threshold=0,00 B
+2015-11-18 05:45:04.356+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Metaspace (Non-heap memory): committed=26,50 MB, used=25,99 MB, max=-1,00 B, threshold=0,00 B
+2015-11-18 05:45:04.356+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Compressed Class Space (Non-heap memory): committed=3,50 MB, used=3,33 MB, max=1,00 GB, threshold=0,00 B
+2015-11-18 05:45:04.356+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: PS Eden Space (Heap memory): committed=512,00 MB, used=348,75 MB, max=1,29 GB, threshold=?
+2015-11-18 05:45:04.356+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: PS Survivor Space (Heap memory): committed=20,00 MB, used=0,00 B, max=20,00 MB, threshold=?
+2015-11-18 05:45:04.357+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: PS Old Gen (Heap memory): committed=133,50 MB, used=31,56 MB, max=2,65 GB, threshold=0,00 B
+2015-11-18 05:45:04.357+0000 INFO  [o.n.k.i.DiagnosticsManager]: Operating system information:
+2015-11-18 05:45:04.357+0000 INFO  [o.n.k.i.DiagnosticsManager]: Operating System: Windows 8.1; version: 6.3; arch: amd64; cpus: 8
+2015-11-18 05:45:04.357+0000 INFO  [o.n.k.i.DiagnosticsManager]: Process id: 2992@ws201976
+2015-11-18 05:45:04.357+0000 INFO  [o.n.k.i.DiagnosticsManager]: Byte order: LITTLE_ENDIAN
+2015-11-18 05:45:04.357+0000 INFO  [o.n.k.i.DiagnosticsManager]: Local timezone: Europe/Berlin
+2015-11-18 05:45:04.357+0000 INFO  [o.n.k.i.DiagnosticsManager]: JVM information:
+2015-11-18 05:45:04.358+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Name: Java HotSpot(TM) 64-Bit Server VM
+2015-11-18 05:45:04.358+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Vendor: Oracle Corporation
+2015-11-18 05:45:04.358+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Version: 25.60-b23
+2015-11-18 05:45:04.358+0000 INFO  [o.n.k.i.DiagnosticsManager]: JIT compiler: HotSpot 64-Bit Tiered Compilers
+2015-11-18 05:45:04.358+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Arguments: []
+2015-11-18 05:45:04.358+0000 INFO  [o.n.k.i.DiagnosticsManager]: Java classpath:
+2015-11-18 05:45:04.360+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jre1.8.0_60\lib\jfr.jar
+2015-11-18 05:45:04.360+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jre1.8.0_60\lib\rt.jar
+2015-11-18 05:45:04.360+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.2] file:/C:/Program%20Files/Java/jre1.8.0_60/lib/ext/sunec.jar
+2015-11-18 05:45:04.360+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.2] file:/C:/Program%20Files/Java/jre1.8.0_60/lib/ext/jaccess.jar
+2015-11-18 05:45:04.360+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.2] file:/C:/Program%20Files/Java/jre1.8.0_60/lib/ext/access-bridge-64.jar
+2015-11-18 05:45:04.360+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.2] file:/C:/Program%20Files/Java/jre1.8.0_60/lib/ext/sunmscapi.jar
+2015-11-18 05:45:04.360+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.2] file:/C:/Program%20Files/Java/jre1.8.0_60/lib/ext/localedata.jar
+2015-11-18 05:45:04.360+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.2] file:/C:/Program%20Files/Java/jre1.8.0_60/lib/ext/nashorn.jar
+2015-11-18 05:45:04.360+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jre1.8.0_60\lib\resources.jar
+2015-11-18 05:45:04.360+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jre1.8.0_60\lib\sunrsasign.jar
+2015-11-18 05:45:04.360+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.2] file:/C:/Program%20Files/Java/jre1.8.0_60/lib/ext/cldrdata.jar
+2015-11-18 05:45:04.360+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jre1.8.0_60\classes
+2015-11-18 05:45:04.360+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.2] file:/C:/Program%20Files/Java/jre1.8.0_60/lib/ext/sunjce_provider.jar
+2015-11-18 05:45:04.360+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.2] file:/C:/Program%20Files/Java/jre1.8.0_60/lib/ext/jfxrt.jar
+2015-11-18 05:45:04.361+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.1] file:/C:/Workspace/cefoot.git/famTree/target/famTree-0.1.0.jar
+2015-11-18 05:45:04.361+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.2] file:/C:/Program%20Files/Java/jre1.8.0_60/lib/ext/zipfs.jar
+2015-11-18 05:45:04.361+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jre1.8.0_60\lib\jce.jar
+2015-11-18 05:45:04.361+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jre1.8.0_60\lib\charsets.jar
+2015-11-18 05:45:04.361+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.2] file:/C:/Program%20Files/Java/jre1.8.0_60/lib/ext/dnsns.jar
+2015-11-18 05:45:04.361+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.2] file:/C:/Program%20Files/Java/jre1.8.0_60/lib/ext/sunpkcs11.jar
+2015-11-18 05:45:04.361+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jre1.8.0_60\lib\jsse.jar
+2015-11-18 05:45:04.361+0000 INFO  [o.n.k.i.DiagnosticsManager]: Library path:
+2015-11-18 05:45:04.361+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Java\jre1.8.0_60\bin
+2015-11-18 05:45:04.362+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\Sun\Java\bin
+2015-11-18 05:45:04.362+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\System32
+2015-11-18 05:45:04.362+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows
+2015-11-18 05:45:04.362+0000 INFO  [o.n.k.i.DiagnosticsManager]: D:\cygwin64\usr\local\bin
+2015-11-18 05:45:04.363+0000 INFO  [o.n.k.i.DiagnosticsManager]: D:\cygwin64\bin
+2015-11-18 05:45:04.363+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\ProgramData\Oracle\Java\javapath
+2015-11-18 05:45:04.363+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
+2015-11-18 05:45:04.364+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Intel\iCLS Client
+2015-11-18 05:45:04.364+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Intel\iCLS Client
+2015-11-18 05:45:04.364+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\System32
+2015-11-18 05:45:04.364+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows
+2015-11-18 05:45:04.365+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\System32\wbem
+2015-11-18 05:45:04.365+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\System32\WindowsPowerShell\v1.0
+2015-11-18 05:45:04.366+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Intel\Intel(R) Management Engine Components\DAL
+2015-11-18 05:45:04.366+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Intel\Intel(R) Management Engine Components\IPT
+2015-11-18 05:45:04.367+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL
+2015-11-18 05:45:04.368+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT
+2015-11-18 05:45:04.368+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Intel\WiFi\bin
+2015-11-18 05:45:04.369+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Common Files\Intel\WirelessCommon
+2015-11-18 05:45:04.369+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Windows Live\Shared
+2015-11-18 05:45:04.369+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Subversion\bin
+2015-11-18 05:45:04.370+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit
+2015-11-18 05:45:04.371+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Microsoft SQL Server\110\Tools\Binn
+2015-11-18 05:45:04.371+0000 INFO  [o.n.k.i.DiagnosticsManager]: D:\Programme\apache-maven-3.2.1\bin
+2015-11-18 05:45:04.371+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Workspace\cefoot.git\famTree\%SDKHOME%\tools
+2015-11-18 05:45:04.372+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Workspace\cefoot.git\famTree\%SDKHOME%\platform-tools
+2015-11-18 05:45:04.372+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Microsoft SQL Server\110\Tools\Binn
+2015-11-18 05:45:04.372+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit
+2015-11-18 05:45:04.372+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn
+2015-11-18 05:45:04.373+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Microsoft SQL Server\100\Tools\Binn
+2015-11-18 05:45:04.373+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Microsoft SQL Server\100\DTS\Binn
+2015-11-18 05:45:04.374+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Oracle\VirtualBox
+2015-11-18 05:45:04.374+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\nodejs
+2015-11-18 05:45:04.375+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\TortoiseGit\bin
+2015-11-18 05:45:04.375+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn
+2015-11-18 05:45:04.375+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Microsoft SQL Server\100\Tools\Binn
+2015-11-18 05:45:04.375+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Microsoft SQL Server\100\DTS\Binn
+2015-11-18 05:45:04.375+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\nodejs
+2015-11-18 05:45:04.375+0000 INFO  [o.n.k.i.DiagnosticsManager]: D:\Programme\adt-bundle-windows-x86_64-20140702\sdk\platform-tools
+2015-11-18 05:45:04.375+0000 INFO  [o.n.k.i.DiagnosticsManager]: D:\Programme\adt-bundle-windows-x86_64-20140702\sdk\tools
+2015-11-18 05:45:04.376+0000 INFO  [o.n.k.i.DiagnosticsManager]: D:\Programme\apache-ant-1.9.4\bin
+2015-11-18 05:45:04.376+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\GNU\GnuPG\pub
+2015-11-18 05:45:04.376+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Intel\WiFi\bin
+2015-11-18 05:45:04.376+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Common Files\Intel\WirelessCommon
+2015-11-18 05:45:04.377+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Microsoft\Web Platform Installer
+2015-11-18 05:45:04.377+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\HTML Help Workshop
+2015-11-18 05:45:04.378+0000 INFO  [o.n.k.i.DiagnosticsManager]: D:\Programme\HashiCorp\Vagrant\bin
+2015-11-18 05:45:04.378+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Users\cpapenfuss\AppData\Roaming\npm
+2015-11-18 05:45:04.379+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Users\cpapenfuss\AppData\Local\Code\bin
+2015-11-18 05:45:04.379+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Boot2Docker for Windows
+2015-11-18 05:45:04.379+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Workspace\cefoot.git\famTree
+2015-11-18 05:45:04.379+0000 INFO  [o.n.k.i.DiagnosticsManager]: System.properties:
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.boot.library.path = C:\Program Files\Java\jre1.8.0_60\bin
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: path.separator = ;
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.encoding.pkg = sun.io
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.country = DE
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.script = 
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.java.launcher = SUN_STANDARD
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.os.patch.level = 
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: PID = 2992
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.dir = C:\Workspace\cefoot.git\famTree
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.jboss.logging.provider = slf4j
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.variant = 
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.jnu.encoding = Cp1252
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.home = C:\Users\cpapenfuss
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: catalina.useNaming = false
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.timezone = Europe/Berlin
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.encoding = Cp1252
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: catalina.home = D:\cygwin64\tmp\tomcat.3162039089381233968.8080
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.name = cpapenfuss
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.java.command = target/famTree-0.1.0.jar
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.arch.data.model = 64
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.language = de
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: awt.toolkit = sun.awt.windows.WToolkit
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: catalina.base = D:\cygwin64\tmp\tomcat.3162039089381233968.8080
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.separator = \
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.io.unicode.encoding = UnicodeLittle
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.cpu.endian = little
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.desktop = windows
+2015-11-18 05:45:04.380+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.cpu.isalist = amd64
+2015-11-18 05:45:04.381+0000 INFO  [o.n.k.i.DiagnosticsManager]: Network information:
+2015-11-18 05:45:04.464+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Software Loopback Interface 1:
+2015-11-18 05:45:04.465+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 127.0.0.1
+2015-11-18 05:45:04.465+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 0:0:0:0:0:0:0:1
+2015-11-18 05:45:04.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Kerneldebugger-Netzwerkadapter:
+2015-11-18 05:45:04.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Intel(R) Dual Band Wireless-AC 7260:
+2015-11-18 05:45:04.465+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:4113:2a55:94c0:791f%wlan0
+2015-11-18 05:45:04.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Virtueller Microsoft-Adapter für direktes WiFi:
+2015-11-18 05:45:04.465+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:e9c9:336c:9fa8:95e5%wlan1
+2015-11-18 05:45:04.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft-ISATAP-Adapter:
+2015-11-18 05:45:04.465+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:0:5efe:c0a8:a801%net0
+2015-11-18 05:45:04.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft-ISATAP-Adapter #4:
+2015-11-18 05:45:04.465+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:0:5efe:c0a8:188%net1
+2015-11-18 05:45:04.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Dell GigabitEthernet:
+2015-11-18 05:45:04.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN-Miniport (SSTP):
+2015-11-18 05:45:04.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN-Miniport (IP):
+2015-11-18 05:45:04.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN-Miniport (PPPOE):
+2015-11-18 05:45:04.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN-Miniport (IKEv2):
+2015-11-18 05:45:04.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN-Miniport (PPTP):
+2015-11-18 05:45:04.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN-Miniport (IPv6):
+2015-11-18 05:45:04.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN-Miniport (L2TP):
+2015-11-18 05:45:04.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN-Miniport (Netzwerkmonitor):
+2015-11-18 05:45:04.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Asynchroner RAS-Adapter:
+2015-11-18 05:45:04.465+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Von Microsoft gehosteter, virtueller Netzwerkadapter:
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:49a2:fdf9:6421:599f%wlan2
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Dell GigabitEthernet - VirtualBox Bridged Networking Driver Miniport:
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Teredo Tunneling Pseudo-Interface:
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Bluetooth-Gerät (PAN):
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Bluetooth-Gerät (RFCOMM-Protokoll-TDI):
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Dell GigabitEthernet:
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 192.168.1.136
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:a1c0:39d5:a55e:ade0%eth7
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface LAN7500 USB 2.0 to Ethernet 10/100/1000 Adapter:
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft-ISATAP-Adapter #3:
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft-ISATAP-Adapter #2:
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft-ISATAP-Adapter #8:
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft-ISATAP-Adapter #9:
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft-ISATAP-Adapter #5:
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft-ISATAP-Adapter #6:
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface VirtualBox Host-Only Ethernet Adapter:
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 192.168.168.1
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:2579:bc92:c99c:5444%eth9
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface VirtualBox Host-Only Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface VirtualBox Host-Only Ethernet Adapter-VirtualBox NDIS Light-Weight Filter-0000:
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface VirtualBox Host-Only Ethernet Adapter-QoS Packet Scheduler-0000:
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface VirtualBox Host-Only Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Dell GigabitEthernet-WFP Native MAC Layer LightWeight Filter-0000:
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Dell GigabitEthernet-VirtualBox NDIS Light-Weight Filter-0000:
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Dell GigabitEthernet-QoS Packet Scheduler-0000:
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Dell GigabitEthernet-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Intel(R) Dual Band Wireless-AC 7260-WFP Native MAC Layer LightWeight Filter-0000:
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Intel(R) Dual Band Wireless-AC 7260-Virtual WiFi Filter Driver-0000:
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Intel(R) Dual Band Wireless-AC 7260-Native WiFi Filter Driver-0000:
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Intel(R) Dual Band Wireless-AC 7260-VirtualBox NDIS Light-Weight Filter-0000:
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Intel(R) Dual Band Wireless-AC 7260-QoS Packet Scheduler-0000:
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Intel(R) Dual Band Wireless-AC 7260-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Von Microsoft gehosteter, virtueller Netzwerkadapter-WFP Native MAC Layer LightWeight Filter-0000:
+2015-11-18 05:45:04.466+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Von Microsoft gehosteter, virtueller Netzwerkadapter-Native WiFi Filter Driver-0000:
+2015-11-18 05:45:04.467+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Von Microsoft gehosteter, virtueller Netzwerkadapter-VirtualBox NDIS Light-Weight Filter-0000:
+2015-11-18 05:45:04.467+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Von Microsoft gehosteter, virtueller Netzwerkadapter-QoS Packet Scheduler-0000:
+2015-11-18 05:45:04.467+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Von Microsoft gehosteter, virtueller Netzwerkadapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2015-11-18 05:45:04.467+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Virtueller Microsoft-Adapter für direktes WiFi-WFP Native MAC Layer LightWeight Filter-0000:
+2015-11-18 05:45:04.467+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Virtueller Microsoft-Adapter für direktes WiFi-Native WiFi Filter Driver-0000:
+2015-11-18 05:45:04.467+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Virtueller Microsoft-Adapter für direktes WiFi-VirtualBox NDIS Light-Weight Filter-0000:
+2015-11-18 05:45:04.467+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Virtueller Microsoft-Adapter für direktes WiFi-QoS Packet Scheduler-0000:
+2015-11-18 05:45:04.467+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Virtueller Microsoft-Adapter für direktes WiFi-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2015-11-18 05:45:04.467+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- INITIALIZED diagnostics END ---
+2015-11-18 05:45:04.538+0000 INFO  [o.n.k.i.n.s.StoreFactory]: Creating new db @ target\hello.db\neostore
+2015-11-18 05:45:04.709+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2015-11-18 05:45:04.713+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2015-11-18 05:45:04.718+0000 INFO  [o.n.k.i.n.s.StoreFactory]: target\hello.db\neostore.relationshiptypestore.db.names hit=0 miss=0 switches=0 ooe=0
+2015-11-18 05:45:04.741+0000 INFO  [o.n.k.i.n.s.StoreFactory]: target\hello.db\neostore.relationshiptypestore.db hit=0 miss=0 switches=0 ooe=0
+2015-11-18 05:45:04.804+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.labeltokenstore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2015-11-18 05:45:04.809+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.labeltokenstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2015-11-18 05:45:04.814+0000 INFO  [o.n.k.i.n.s.StoreFactory]: target\hello.db\neostore.labeltokenstore.db.names hit=0 miss=0 switches=0 ooe=0
+2015-11-18 05:45:04.832+0000 INFO  [o.n.k.i.n.s.StoreFactory]: target\hello.db\neostore.labeltokenstore.db hit=0 miss=0 switches=0 ooe=0
+2015-11-18 05:45:04.892+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2015-11-18 05:45:04.894+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2015-11-18 05:45:04.896+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.labeltokenstore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2015-11-18 05:45:04.896+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.labeltokenstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2015-11-18 05:45:04.899+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.propertystore.db.strings] brickCount=0 brickSize=197120b mappedMem=197132288b (storeSize=128b)
+2015-11-18 05:45:04.900+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2015-11-18 05:45:04.902+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2015-11-18 05:45:04.903+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.propertystore.db.arrays] brickCount=0 brickSize=223232b mappedMem=223346688b (storeSize=128b)
+2015-11-18 05:45:04.909+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.propertystore.db] brickCount=0 brickSize=2317320b mappedMem=231735296b (storeSize=0b)
+2015-11-18 05:45:04.915+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.relationshipstore.db] brickCount=0 brickSize=2841618b mappedMem=284164096b (storeSize=0b)
+2015-11-18 05:45:04.917+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.nodestore.db.labels] brickCount=0 brickSize=0b mappedMem=0b (storeSize=68b)
+2015-11-18 05:45:04.919+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.nodestore.db] brickCount=0 brickSize=639630b mappedMem=63963136b (storeSize=0b)
+2015-11-18 05:45:04.920+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.schemastore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=64b)
+2015-11-18 05:45:04.922+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.relationshipgroupstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=25b)
+2015-11-18 05:45:04.923+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2015-11-18 05:45:04.930+0000 INFO  [o.n.k.i.n.s.StoreFactory]: target\hello.db\neostore.relationshiptypestore.db.names hit=0 miss=0 switches=0 ooe=0
+2015-11-18 05:45:04.941+0000 INFO  [o.n.k.i.n.s.StoreFactory]: target\hello.db\neostore.relationshiptypestore.db hit=0 miss=0 switches=0 ooe=0
+2015-11-18 05:45:04.951+0000 INFO  [o.n.k.i.n.s.StoreFactory]: target\hello.db\neostore.labeltokenstore.db.names hit=0 miss=0 switches=0 ooe=0
+2015-11-18 05:45:04.961+0000 INFO  [o.n.k.i.n.s.StoreFactory]: target\hello.db\neostore.labeltokenstore.db hit=0 miss=0 switches=0 ooe=0
+2015-11-18 05:45:04.971+0000 INFO  [o.n.k.i.n.s.StoreFactory]: target\hello.db\neostore.propertystore.db.strings hit=0 miss=0 switches=0 ooe=0
+2015-11-18 05:45:04.983+0000 INFO  [o.n.k.i.n.s.StoreFactory]: target\hello.db\neostore.propertystore.db.index.keys hit=0 miss=0 switches=0 ooe=0
+2015-11-18 05:45:05.003+0000 INFO  [o.n.k.i.n.s.StoreFactory]: target\hello.db\neostore.propertystore.db.index hit=0 miss=0 switches=0 ooe=0
+2015-11-18 05:45:05.023+0000 INFO  [o.n.k.i.n.s.StoreFactory]: target\hello.db\neostore.propertystore.db.arrays hit=0 miss=0 switches=0 ooe=0
+2015-11-18 05:45:05.042+0000 INFO  [o.n.k.i.n.s.StoreFactory]: target\hello.db\neostore.propertystore.db hit=0 miss=0 switches=0 ooe=0
+2015-11-18 05:45:05.064+0000 INFO  [o.n.k.i.n.s.StoreFactory]: target\hello.db\neostore.relationshipstore.db hit=0 miss=0 switches=0 ooe=0
+2015-11-18 05:45:05.084+0000 INFO  [o.n.k.i.n.s.StoreFactory]: target\hello.db\neostore.nodestore.db.labels hit=0 miss=0 switches=0 ooe=0
+2015-11-18 05:45:05.102+0000 INFO  [o.n.k.i.n.s.StoreFactory]: target\hello.db\neostore.nodestore.db hit=0 miss=0 switches=0 ooe=0
+2015-11-18 05:45:05.123+0000 INFO  [o.n.k.i.n.s.StoreFactory]: target\hello.db\neostore.schemastore.db hit=0 miss=0 switches=0 ooe=0
+2015-11-18 05:45:05.147+0000 INFO  [o.n.k.i.n.s.StoreFactory]: target\hello.db\neostore.relationshipgroupstore.db hit=0 miss=0 switches=0 ooe=0
+2015-11-18 05:45:05.170+0000 INFO  [o.n.k.i.n.s.StoreFactory]: target\hello.db\neostore hit=0 miss=10 switches=0 ooe=0
+2015-11-18 05:45:05.218+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2015-11-18 05:45:05.219+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2015-11-18 05:45:05.220+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.labeltokenstore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2015-11-18 05:45:05.220+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.labeltokenstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2015-11-18 05:45:05.221+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.propertystore.db.strings] brickCount=0 brickSize=197120b mappedMem=197132288b (storeSize=128b)
+2015-11-18 05:45:05.222+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2015-11-18 05:45:05.223+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2015-11-18 05:45:05.224+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.propertystore.db.arrays] brickCount=0 brickSize=223232b mappedMem=223346688b (storeSize=128b)
+2015-11-18 05:45:05.225+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.propertystore.db] brickCount=0 brickSize=2317320b mappedMem=231735296b (storeSize=0b)
+2015-11-18 05:45:05.226+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.relationshipstore.db] brickCount=0 brickSize=2841618b mappedMem=284164096b (storeSize=0b)
+2015-11-18 05:45:05.227+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.nodestore.db.labels] brickCount=0 brickSize=0b mappedMem=0b (storeSize=68b)
+2015-11-18 05:45:05.228+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.nodestore.db] brickCount=0 brickSize=639630b mappedMem=63963136b (storeSize=0b)
+2015-11-18 05:45:05.229+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.schemastore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=64b)
+2015-11-18 05:45:05.230+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore.relationshipgroupstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=25b)
+2015-11-18 05:45:05.231+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [target\hello.db\neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=81b)
+2015-11-18 05:45:05.320+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore]: No lucene scan store index found, this might just be first use. Preparing to rebuild.
+2015-11-18 05:45:05.344+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore]: No lucene scan store index found, this might just be first use. Preparing to rebuild.
+2015-11-18 05:45:05.427+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Opened logical log [target\hello.db\nioneo_logical.log.1] version=0, lastTxId=1 (clean)
+2015-11-18 05:45:05.432+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore]: Rebuilding lucene scan store, this may take a while
+2015-11-18 05:45:05.434+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore]: Lucene scan store rebuilt (roughly -1 nodes)
+2015-11-18 05:45:05.438+0000 INFO  [o.n.k.i.t.TxManager]: TM new log: tm_tx_log.1
+2015-11-18 05:45:05.446+0000 INFO  [o.n.k.i.t.KernelHealth]: Kernel health set to OK
+2015-11-18 05:45:05.458+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Opened logical log [target\hello.db\index\lucene.log.1] version=0, lastTxId=1 (clean)
+2015-11-18 05:45:05.468+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2015-11-18 05:45:05.468+0000 INFO  [o.n.k.i.DiagnosticsManager]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId{creationTime=1447825504542, randomId=-4352446933553122534, storeVersion=14406081294923270, upgradeTime=1447825504542, upgradeId=-4352446933553122534}
+2015-11-18 05:45:05.468+0000 INFO  [o.n.k.i.DiagnosticsManager]: Kernel version: Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.1.5
+2015-11-18 05:45:05.468+0000 INFO  [o.n.k.i.DiagnosticsManager]: Neo4j component versions:
+2015-11-18 05:45:05.471+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 1.9 (neo4j-cypher-compiler-1.9), version: 2.0.3; revision: 2.0.3:2.0-maint:72/307c563c11b75fdc71cfa6df05daf9b08d6c37dc
+2015-11-18 05:45:05.471+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j Community (neo4j), version: 2.1.5; revision: 2.1.5:2.1-maint:529/45c3cc04946c2b0e243e48c8252e40cb85931744
+2015-11-18 05:45:05.471+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Commons (neo4j-cypher-commons), version: 2.1.5; revision: 2.1.5:2.1-maint:529/45c3cc04946c2b0e243e48c8252e40cb85931744
+2015-11-18 05:45:05.471+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neo4j-udc, version: 2.1.5; revision: 2.1.5:2.1-maint:529/45c3cc04946c2b0e243e48c8252e40cb85931744
+2015-11-18 05:45:05.471+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Lucene Index (neo4j-lucene-index), version: 2.1.5; revision: 2.1.5:2.1-maint:529/45c3cc04946c2b0e243e48c8252e40cb85931744
+2015-11-18 05:45:05.471+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 2.0 (neo4j-cypher-compiler-2.0), version: 2.0.3; revision: 2.0.3:2.0-maint:72/307c563c11b75fdc71cfa6df05daf9b08d6c37dc
+2015-11-18 05:45:05.471+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.1.5; revision: 2.1.5:2.1-maint:529/45c3cc04946c2b0e243e48c8252e40cb85931744
+2015-11-18 05:45:05.471+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Matching (neo4j-graph-matching), version: 2.1.5; revision: 2.1.5:2.1-maint:529/45c3cc04946c2b0e243e48c8252e40cb85931744
+2015-11-18 05:45:05.471+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - JMX support (neo4j-jmx), version: 2.1.5; revision: 2.1.5:2.1-maint:529/45c3cc04946c2b0e243e48c8252e40cb85931744
+2015-11-18 05:45:05.471+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher (neo4j-cypher), version: 2.1.5; revision: 2.1.5:2.1-maint:529/45c3cc04946c2b0e243e48c8252e40cb85931744
+2015-11-18 05:45:05.471+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Algorithms (neo4j-graph-algo), version: 2.1.5; revision: 2.1.5:2.1-maint:529/45c3cc04946c2b0e243e48c8252e40cb85931744
+2015-11-18 05:45:05.471+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2015-11-18 05:45:05.474+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2015-11-18 05:45:05.474+0000 INFO  [o.n.k.i.DiagnosticsManager]: Store versions:
+2015-11-18 05:45:05.474+0000 INFO  [o.n.k.i.DiagnosticsManager]: Store versions:
+2015-11-18 05:45:05.474+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NeoStore v0.A.3
+2015-11-18 05:45:05.474+0000 INFO  [o.n.k.i.DiagnosticsManager]:   SchemaStore v0.A.3
+2015-11-18 05:45:05.474+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NodeStore v0.A.3
+2015-11-18 05:45:05.475+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipStore v0.A.3
+2015-11-18 05:45:05.475+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipTypeStore v0.A.3
+2015-11-18 05:45:05.475+0000 INFO  [o.n.k.i.DiagnosticsManager]:   LabelTokenStore v0.A.3
+2015-11-18 05:45:05.475+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyStore v0.A.3
+2015-11-18 05:45:05.475+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyIndexStore v0.A.3
+2015-11-18 05:45:05.475+0000 INFO  [o.n.k.i.DiagnosticsManager]:   StringPropertyStore v0.A.3
+2015-11-18 05:45:05.475+0000 INFO  [o.n.k.i.DiagnosticsManager]:   ArrayPropertyStore v0.A.3
+2015-11-18 05:45:05.475+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipGroupStore v0.A.3
+2015-11-18 05:45:05.475+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2015-11-18 05:45:05.475+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2015-11-18 05:45:05.475+0000 INFO  [o.n.k.i.DiagnosticsManager]: Id usage:
+2015-11-18 05:45:05.475+0000 INFO  [o.n.k.i.DiagnosticsManager]: Id usage:
+2015-11-18 05:45:05.475+0000 INFO  [o.n.k.i.DiagnosticsManager]:   SchemaStore: used=1 high=0
+2015-11-18 05:45:05.475+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NodeStore: used=0 high=-1
+2015-11-18 05:45:05.475+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipStore: used=0 high=-1
+2015-11-18 05:45:05.475+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipTypeStore: used=0 high=-1
+2015-11-18 05:45:05.475+0000 INFO  [o.n.k.i.DiagnosticsManager]:   LabelTokenStore: used=0 high=-1
+2015-11-18 05:45:05.475+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyStore: used=0 high=-1
+2015-11-18 05:45:05.475+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyIndexStore: used=0 high=-1
+2015-11-18 05:45:05.475+0000 INFO  [o.n.k.i.DiagnosticsManager]:   StringPropertyStore: used=1 high=0
+2015-11-18 05:45:05.475+0000 INFO  [o.n.k.i.DiagnosticsManager]:   ArrayPropertyStore: used=1 high=0
+2015-11-18 05:45:05.475+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipGroupStore: used=1 high=0
+2015-11-18 05:45:05.475+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2015-11-18 05:45:05.475+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2015-11-18 05:45:05.475+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2015-11-18 05:45:05.475+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2015-11-18 05:45:05.477+0000 INFO  [o.n.k.i.DiagnosticsManager]: Disk space on partition (Total / Free / Free %): 246655479808 / 62770372608 / 25
+Storage files: (filename : modification date - size)
+2015-11-18 05:45:05.479+0000 INFO  [o.n.k.i.DiagnosticsManager]:   active_tx_log: 2015-11-18T06:45:05+0100 - 11,00 B
+2015-11-18 05:45:05.479+0000 INFO  [o.n.k.i.DiagnosticsManager]:   index:
+2015-11-18 05:45:05.479+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene-store.db: 2015-11-18T06:45:05+0100 - 40,00 B
+2015-11-18 05:45:05.480+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.1: 2015-11-18T06:45:05+0100 - 16,00 B
+2015-11-18 05:45:05.480+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.active: 2015-11-18T06:45:05+0100 - 4,00 B
+2015-11-18 05:45:05.480+0000 INFO  [o.n.k.i.DiagnosticsManager]:   - Total: 2015-11-18T06:45:05+0100 - 60,00 B
+2015-11-18 05:45:05.480+0000 INFO  [o.n.k.i.DiagnosticsManager]:   lock: 2015-11-18T06:45:04+0100 - 0,00 B
+2015-11-18 05:45:05.481+0000 INFO  [o.n.k.i.DiagnosticsManager]:   messages.log: 2015-11-18T06:45:04+0100 - 41,17 kB
+2015-11-18 05:45:05.481+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore: 2015-11-18T06:45:05+0100 - 81,00 B
+2015-11-18 05:45:05.481+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.id: 2015-11-18T06:45:05+0100 - 9,00 B
+2015-11-18 05:45:05.482+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db: 2015-11-18T06:45:05+0100 - 0,00 B
+2015-11-18 05:45:05.482+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.id: 2015-11-18T06:45:04+0100 - 9,00 B
+2015-11-18 05:45:05.482+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.names: 2015-11-18T06:45:05+0100 - 38,00 B
+2015-11-18 05:45:05.482+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.names.id: 2015-11-18T06:45:04+0100 - 9,00 B
+2015-11-18 05:45:05.483+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db: 2015-11-18T06:45:05+0100 - 0,00 B
+2015-11-18 05:45:05.483+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.id: 2015-11-18T06:45:05+0100 - 9,00 B
+2015-11-18 05:45:05.483+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.labels: 2015-11-18T06:45:05+0100 - 68,00 B
+2015-11-18 05:45:05.484+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.labels.id: 2015-11-18T06:45:05+0100 - 9,00 B
+2015-11-18 05:45:05.484+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db: 2015-11-18T06:45:05+0100 - 0,00 B
+2015-11-18 05:45:05.484+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.arrays: 2015-11-18T06:45:05+0100 - 128,00 B
+2015-11-18 05:45:05.484+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.arrays.id: 2015-11-18T06:45:05+0100 - 9,00 B
+2015-11-18 05:45:05.485+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.id: 2015-11-18T06:45:05+0100 - 9,00 B
+2015-11-18 05:45:05.485+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index: 2015-11-18T06:45:05+0100 - 0,00 B
+2015-11-18 05:45:05.485+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.id: 2015-11-18T06:45:05+0100 - 9,00 B
+2015-11-18 05:45:05.486+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.keys: 2015-11-18T06:45:05+0100 - 38,00 B
+2015-11-18 05:45:05.486+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.keys.id: 2015-11-18T06:45:04+0100 - 9,00 B
+2015-11-18 05:45:05.486+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.strings: 2015-11-18T06:45:05+0100 - 128,00 B
+2015-11-18 05:45:05.486+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.strings.id: 2015-11-18T06:45:04+0100 - 9,00 B
+2015-11-18 05:45:05.487+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipgroupstore.db: 2015-11-18T06:45:05+0100 - 25,00 B
+2015-11-18 05:45:05.487+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipgroupstore.db.id: 2015-11-18T06:45:05+0100 - 9,00 B
+2015-11-18 05:45:05.487+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipstore.db: 2015-11-18T06:45:05+0100 - 0,00 B
+2015-11-18 05:45:05.488+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipstore.db.id: 2015-11-18T06:45:05+0100 - 9,00 B
+2015-11-18 05:45:05.488+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db: 2015-11-18T06:45:05+0100 - 0,00 B
+2015-11-18 05:45:05.488+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.id: 2015-11-18T06:45:04+0100 - 9,00 B
+2015-11-18 05:45:05.488+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.names: 2015-11-18T06:45:05+0100 - 38,00 B
+2015-11-18 05:45:05.489+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.names.id: 2015-11-18T06:45:04+0100 - 9,00 B
+2015-11-18 05:45:05.489+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.schemastore.db: 2015-11-18T06:45:05+0100 - 64,00 B
+2015-11-18 05:45:05.489+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.schemastore.db.id: 2015-11-18T06:45:05+0100 - 9,00 B
+2015-11-18 05:45:05.490+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.1: 2015-11-18T06:45:05+0100 - 16,00 B
+2015-11-18 05:45:05.490+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.active: 2015-11-18T06:45:05+0100 - 4,00 B
+2015-11-18 05:45:05.490+0000 INFO  [o.n.k.i.DiagnosticsManager]:   schema:
+2015-11-18 05:45:05.490+0000 INFO  [o.n.k.i.DiagnosticsManager]:     label:
+2015-11-18 05:45:05.491+0000 INFO  [o.n.k.i.DiagnosticsManager]:       lucene:
+2015-11-18 05:45:05.491+0000 INFO  [o.n.k.i.DiagnosticsManager]:         write.lock: 2015-11-18T06:45:05+0100 - 0,00 B
+2015-11-18 05:45:05.491+0000 INFO  [o.n.k.i.DiagnosticsManager]:       - Total: 2015-11-18T06:45:05+0100 - 0,00 B
+2015-11-18 05:45:05.491+0000 INFO  [o.n.k.i.DiagnosticsManager]:     - Total: 2015-11-18T06:45:05+0100 - 0,00 B
+2015-11-18 05:45:05.491+0000 INFO  [o.n.k.i.DiagnosticsManager]:   - Total: 2015-11-18T06:45:05+0100 - 0,00 B
+2015-11-18 05:45:05.492+0000 INFO  [o.n.k.i.DiagnosticsManager]:   store_lock: 2015-11-18T06:45:04+0100 - 0,00 B
+2015-11-18 05:45:05.492+0000 INFO  [o.n.k.i.DiagnosticsManager]:   tm_tx_log.1: 2015-11-18T06:45:05+0100 - 0,00 B
+2015-11-18 05:45:05.492+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2015-11-18 05:45:05.548+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Database is now ready
+2015-12-15 18:43:34.663+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 7 or OpenJDK(TM) 7.
+2015-12-15 18:43:34.710+0000 INFO  [o.n.k.InternalAbstractGraphDatabase]: No locking implementation specified, defaulting to 'community'
+2015-12-15 18:43:34.897+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- INITIALIZED diagnostics START ---
+2015-12-15 18:43:34.929+0000 INFO  [o.n.k.i.DiagnosticsManager]: Neo4j Kernel properties:
+2015-12-15 18:43:34.929+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.propertystore.db.strings.mapped_memory=188M
+2015-12-15 18:43:34.929+0000 INFO  [o.n.k.i.DiagnosticsManager]: ephemeral=false
+2015-12-15 18:43:34.929+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.nodestore.db.mapped_memory=61M
+2015-12-15 18:43:34.929+0000 INFO  [o.n.k.i.DiagnosticsManager]: store_dir=hello.db
+2015-12-15 18:43:34.929+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.propertystore.db.arrays.mapped_memory=213M
+2015-12-15 18:43:34.929+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.propertystore.db.mapped_memory=221M
+2015-12-15 18:43:34.929+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.relationshipstore.db.mapped_memory=271M
+2015-12-15 18:43:34.929+0000 INFO  [o.n.k.i.DiagnosticsManager]: Diagnostics providers:
+2015-12-15 18:43:34.944+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.kernel.configuration.Config
+2015-12-15 18:43:34.944+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.kernel.info.DiagnosticsManager
+2015-12-15 18:43:34.944+0000 INFO  [o.n.k.i.DiagnosticsManager]: SYSTEM_MEMORY
+2015-12-15 18:43:34.944+0000 INFO  [o.n.k.i.DiagnosticsManager]: JAVA_MEMORY
+2015-12-15 18:43:34.944+0000 INFO  [o.n.k.i.DiagnosticsManager]: OPERATING_SYSTEM
+2015-12-15 18:43:34.944+0000 INFO  [o.n.k.i.DiagnosticsManager]: JAVA_VIRTUAL_MACHINE
+2015-12-15 18:43:34.944+0000 INFO  [o.n.k.i.DiagnosticsManager]: CLASSPATH
+2015-12-15 18:43:34.944+0000 INFO  [o.n.k.i.DiagnosticsManager]: LIBRARY_PATH
+2015-12-15 18:43:34.944+0000 INFO  [o.n.k.i.DiagnosticsManager]: SYSTEM_PROPERTIES
+2015-12-15 18:43:34.944+0000 INFO  [o.n.k.i.DiagnosticsManager]: NETWORK
+2015-12-15 18:43:34.944+0000 INFO  [o.n.k.i.DiagnosticsManager]: System memory information:
+2015-12-15 18:43:34.944+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total Physical memory: 15,91 GB
+2015-12-15 18:43:34.944+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free Physical memory: 10,72 GB
+2015-12-15 18:43:34.944+0000 INFO  [o.n.k.i.DiagnosticsManager]: Committed virtual memory: 460,84 MB
+2015-12-15 18:43:34.944+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total swap space: 18,28 GB
+2015-12-15 18:43:34.944+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free swap space: 11,94 GB
+2015-12-15 18:43:34.944+0000 INFO  [o.n.k.i.DiagnosticsManager]: JVM memory information:
+2015-12-15 18:43:34.944+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free  memory: 188,93 MB
+2015-12-15 18:43:34.944+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total memory: 209,50 MB
+2015-12-15 18:43:34.944+0000 INFO  [o.n.k.i.DiagnosticsManager]: Max   memory: 3,54 GB
+2015-12-15 18:43:34.944+0000 INFO  [o.n.k.i.DiagnosticsManager]: Garbage Collector: PS Scavenge: [PS Eden Space, PS Survivor Space]
+2015-12-15 18:43:34.944+0000 INFO  [o.n.k.i.DiagnosticsManager]: Garbage Collector: PS MarkSweep: [PS Eden Space, PS Survivor Space, PS Old Gen]
+2015-12-15 18:43:34.944+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Code Cache (Non-heap memory): committed=10,19 MB, used=9,66 MB, max=240,00 MB, threshold=0,00 B
+2015-12-15 18:43:34.944+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Metaspace (Non-heap memory): committed=26,75 MB, used=26,33 MB, max=-1,00 B, threshold=0,00 B
+2015-12-15 18:43:34.944+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Compressed Class Space (Non-heap memory): committed=3,50 MB, used=3,33 MB, max=1,00 GB, threshold=0,00 B
+2015-12-15 18:43:34.960+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: PS Eden Space (Heap memory): committed=92,50 MB, used=1,51 MB, max=1,30 GB, threshold=?
+2015-12-15 18:43:34.960+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: PS Survivor Space (Heap memory): committed=10,50 MB, used=10,49 MB, max=10,50 MB, threshold=?
+2015-12-15 18:43:34.960+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: PS Old Gen (Heap memory): committed=106,50 MB, used=8,57 MB, max=2,65 GB, threshold=0,00 B
+2015-12-15 18:43:34.960+0000 INFO  [o.n.k.i.DiagnosticsManager]: Operating system information:
+2015-12-15 18:43:34.960+0000 INFO  [o.n.k.i.DiagnosticsManager]: Operating System: Windows 8.1; version: 6.3; arch: amd64; cpus: 8
+2015-12-15 18:43:34.960+0000 INFO  [o.n.k.i.DiagnosticsManager]: Process id: 1012@ws201976
+2015-12-15 18:43:34.960+0000 INFO  [o.n.k.i.DiagnosticsManager]: Byte order: LITTLE_ENDIAN
+2015-12-15 18:43:34.960+0000 INFO  [o.n.k.i.DiagnosticsManager]: Local timezone: Europe/Berlin
+2015-12-15 18:43:34.960+0000 INFO  [o.n.k.i.DiagnosticsManager]: JVM information:
+2015-12-15 18:43:34.960+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Name: Java HotSpot(TM) 64-Bit Server VM
+2015-12-15 18:43:34.960+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Vendor: Oracle Corporation
+2015-12-15 18:43:34.960+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Version: 25.60-b23
+2015-12-15 18:43:34.960+0000 INFO  [o.n.k.i.DiagnosticsManager]: JIT compiler: HotSpot 64-Bit Tiered Compilers
+2015-12-15 18:43:34.960+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Arguments: []
+2015-12-15 18:43:34.960+0000 INFO  [o.n.k.i.DiagnosticsManager]: Java classpath:
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/apache/tomcat/embed/tomcat-embed-websocket/8.0.28/tomcat-embed-websocket-8.0.28.jar
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/neo4j/neo4j-kernel/2.1.5/neo4j-kernel-2.1.5.jar
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/com/github/fge/json-patch/1.7/json-patch-1.7.jar
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/hateoas/spring-hateoas/0.16.0.RELEASE/spring-hateoas-0.16.0.RELEASE.jar
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/hibernate/hibernate-validator/5.1.3.Final/hibernate-validator-5.1.3.Final.jar
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jdk1.8.0_60\jre\lib\jfr.jar
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/data/spring-data-rest-core/2.2.4.RELEASE/spring-data-rest-core-2.2.4.RELEASE.jar
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/parboiled/parboiled-core/1.1.6/parboiled-core-1.1.6.jar
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/neo4j/neo4j-cypher-dsl/2.0.1/neo4j-cypher-dsl-2.0.1.jar
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/slf4j/jul-to-slf4j/1.7.12/jul-to-slf4j-1.7.12.jar
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_60/jre/lib/ext/jfxrt.jar
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/boot/spring-boot-starter/1.2.7.RELEASE/spring-boot-starter-1.2.7.RELEASE.jar
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/spring-beans/4.1.8.RELEASE/spring-beans-4.1.8.RELEASE.jar
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/neo4j/neo4j/2.1.5/neo4j-2.1.5.jar
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/boot/spring-boot-autoconfigure/1.2.7.RELEASE/spring-boot-autoconfigure-1.2.7.RELEASE.jar
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/com/github/fge/jackson-coreutils/1.6/jackson-coreutils-1.6.jar
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/parboiled/parboiled-scala_2.10/1.1.6/parboiled-scala_2.10-1.1.6.jar
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/atteo/evo-inflector/1.2/evo-inflector-1.2.jar
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_60/jre/lib/ext/sunmscapi.jar
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/neo4j/neo4j-cypher/2.1.5/neo4j-cypher-2.1.5.jar
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_60/jre/lib/ext/nashorn.jar
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/aspectj/aspectjweaver/1.8.7/aspectjweaver-1.8.7.jar
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jdk1.8.0_60\jre\lib\sunrsasign.jar
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1.jar
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jdk1.8.0_60\jre\classes
+2015-12-15 18:43:35.069+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/boot/spring-boot-starter-tomcat/1.2.7.RELEASE/spring-boot-starter-tomcat-1.2.7.RELEASE.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_60/jre/lib/ext/localedata.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/spring-aspects/4.1.8.RELEASE/spring-aspects-4.1.8.RELEASE.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/com/fasterxml/classmate/1.0.0/classmate-1.0.0.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/neo4j/neo4j-jmx/2.1.5/neo4j-jmx-2.1.5.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/spring-webmvc/4.1.8.RELEASE/spring-webmvc-4.1.8.RELEASE.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_60/jre/lib/ext/zipfs.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/neo4j/neo4j-graph-algo/2.1.5/neo4j-graph-algo-2.1.5.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/spring-web/4.1.8.RELEASE/spring-web-4.1.8.RELEASE.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_60/jre/lib/ext/sunpkcs11.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jdk1.8.0_60\jre\lib\charsets.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_60/jre/lib/ext/jaccess.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/neo4j/neo4j-cypher-compiler-1.9/2.0.3/neo4j-cypher-compiler-1.9-2.0.3.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/yaml/snakeyaml/1.14/snakeyaml-1.14.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/neo4j/neo4j-lucene-index/2.1.5/neo4j-lucene-index-2.1.5.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/apache/tomcat/embed/tomcat-embed-logging-juli/8.0.28/tomcat-embed-logging-juli-8.0.28.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/slf4j/log4j-over-slf4j/1.7.12/log4j-over-slf4j-1.7.12.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_60/jre/lib/ext/sunec.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/com/googlecode/concurrentlinkedhashmap/concurrentlinkedhashmap-lru/1.3.1/concurrentlinkedhashmap-lru-1.3.1.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/boot/spring-boot/1.2.7.RELEASE/spring-boot-1.2.7.RELEASE.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jdk1.8.0_60\jre\lib\jsse.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/boot/spring-boot-starter-data-rest/1.2.7.RELEASE/spring-boot-starter-data-rest-1.2.7.RELEASE.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/com/fasterxml/jackson/core/jackson-core/2.4.6/jackson-core-2.4.6.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/data/spring-data-rest-webmvc/2.2.4.RELEASE/spring-data-rest-webmvc-2.2.4.RELEASE.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/net/sf/opencsv/opencsv/2.0/opencsv-2.0.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/spring-core/4.1.8.RELEASE/spring-core-4.1.8.RELEASE.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jdk1.8.0_60\jre\lib\resources.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_60/jre/lib/ext/dnsns.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jdk1.8.0_60\jre\lib\rt.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/com/fasterxml/jackson/core/jackson-databind/2.4.6/jackson-databind-2.4.6.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Workspace/cefoot.git/famTree/target/classes/
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/aspectj/aspectjrt/1.8.7/aspectjrt-1.8.7.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/apache/lucene/lucene-core/3.6.2/lucene-core-3.6.2.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/com/fasterxml/jackson/core/jackson-annotations/2.4.6/jackson-annotations-2.4.6.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/data/spring-data-neo4j/3.2.4.RELEASE/spring-data-neo4j-3.2.4.RELEASE.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/apache/tomcat/embed/tomcat-embed-core/8.0.28/tomcat-embed-core-8.0.28.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/com/github/fge/msg-simple/1.1/msg-simple-1.1.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/boot/spring-boot-starter-web/1.2.7.RELEASE/spring-boot-starter-web-1.2.7.RELEASE.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/slf4j/jcl-over-slf4j/1.7.12/jcl-over-slf4j-1.7.12.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jdk1.8.0_60\jre\lib\jce.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/com/github/fge/btf/1.2/btf-1.2.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/data/spring-data-commons/1.9.4.RELEASE/spring-data-commons-1.9.4.RELEASE.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/neo4j/neo4j-cypher-commons/2.1.5/neo4j-cypher-commons-2.1.5.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/neo4j/neo4j-primitive-collections/2.1.5/neo4j-primitive-collections-2.1.5.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/apache/tomcat/embed/tomcat-embed-el/8.0.28/tomcat-embed-el-8.0.28.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/spring-expression/4.1.8.RELEASE/spring-expression-4.1.8.RELEASE.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_60/jre/lib/ext/cldrdata.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/boot/spring-boot-starter-logging/1.2.7.RELEASE/spring-boot-starter-logging-1.2.7.RELEASE.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/spring-aop/4.1.8.RELEASE/spring-aop-4.1.8.RELEASE.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/plugin/spring-plugin-core/1.1.0.RELEASE/spring-plugin-core-1.1.0.RELEASE.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/com/google/guava/guava/16.0.1/guava-16.0.1.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/neo4j/neo4j-graph-matching/2.1.5/neo4j-graph-matching-2.1.5.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/spring-tx/4.1.8.RELEASE/spring-tx-4.1.8.RELEASE.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/spring-context/4.1.8.RELEASE/spring-context-4.1.8.RELEASE.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/neo4j/neo4j-cypher-compiler-2.0/2.0.3/neo4j-cypher-compiler-2.0-2.0.3.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_60/jre/lib/ext/access-bridge-64.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/neo4j/neo4j-cypher-compiler-2.1/2.1.5/neo4j-cypher-compiler-2.1-2.1.5.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_60/jre/lib/ext/sunjce_provider.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/neo4j/neo4j-udc/2.1.5/neo4j-udc-2.1.5.jar
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]: Library path:
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Java\jdk1.8.0_60\bin
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\Sun\Java\bin
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\System32
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\ProgramData\Oracle\Java\javapath
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Intel\iCLS Client
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Intel\iCLS Client
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\System32
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\System32\wbem
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\System32\WindowsPowerShell\v1.0
+2015-12-15 18:43:35.085+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Intel\Intel(R) Management Engine Components\DAL
+2015-12-15 18:43:35.100+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Intel\Intel(R) Management Engine Components\IPT
+2015-12-15 18:43:35.100+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL
+2015-12-15 18:43:35.100+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT
+2015-12-15 18:43:35.100+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Intel\WiFi\bin
+2015-12-15 18:43:35.100+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Common Files\Intel\WirelessCommon
+2015-12-15 18:43:35.100+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Windows Live\Shared
+2015-12-15 18:43:35.100+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Subversion\bin
+2015-12-15 18:43:35.100+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit
+2015-12-15 18:43:35.100+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Microsoft SQL Server\110\Tools\Binn
+2015-12-15 18:43:35.100+0000 INFO  [o.n.k.i.DiagnosticsManager]: D:\Programme\apache-maven-3.2.1\bin
+2015-12-15 18:43:35.100+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Workspace\cefoot.git\famTree\%SDKHOME%\tools
+2015-12-15 18:43:35.100+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Workspace\cefoot.git\famTree\%SDKHOME%\platform-tools
+2015-12-15 18:43:35.100+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Microsoft SQL Server\110\Tools\Binn
+2015-12-15 18:43:35.100+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit
+2015-12-15 18:43:35.100+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn
+2015-12-15 18:43:35.100+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Microsoft SQL Server\100\Tools\Binn
+2015-12-15 18:43:35.100+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Microsoft SQL Server\100\DTS\Binn
+2015-12-15 18:43:35.100+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Oracle\VirtualBox
+2015-12-15 18:43:35.100+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\nodejs
+2015-12-15 18:43:35.116+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\TortoiseGit\bin
+2015-12-15 18:43:35.116+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn
+2015-12-15 18:43:35.116+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Microsoft SQL Server\100\Tools\Binn
+2015-12-15 18:43:35.116+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Microsoft SQL Server\100\DTS\Binn
+2015-12-15 18:43:35.116+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\nodejs
+2015-12-15 18:43:35.116+0000 INFO  [o.n.k.i.DiagnosticsManager]: D:\Programme\adt-bundle-windows-x86_64-20140702\sdk\platform-tools
+2015-12-15 18:43:35.116+0000 INFO  [o.n.k.i.DiagnosticsManager]: D:\Programme\adt-bundle-windows-x86_64-20140702\sdk\tools
+2015-12-15 18:43:35.116+0000 INFO  [o.n.k.i.DiagnosticsManager]: D:\Programme\apache-ant-1.9.4\bin
+2015-12-15 18:43:35.116+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\GNU\GnuPG\pub
+2015-12-15 18:43:35.116+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Intel\WiFi\bin
+2015-12-15 18:43:35.116+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Common Files\Intel\WirelessCommon
+2015-12-15 18:43:35.116+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Microsoft\Web Platform Installer
+2015-12-15 18:43:35.116+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\HTML Help Workshop
+2015-12-15 18:43:35.116+0000 INFO  [o.n.k.i.DiagnosticsManager]: D:\Programme\HashiCorp\Vagrant\bin
+2015-12-15 18:43:35.116+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Microsoft SQL Server\110\Tools\Binn
+2015-12-15 18:43:35.116+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\System32\config\systemprofile\.dnx\bin
+2015-12-15 18:43:35.116+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Microsoft DNX\Dnvm
+2015-12-15 18:43:35.116+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Microsoft SQL Server\120\Tools\Binn
+2015-12-15 18:43:35.116+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit
+2015-12-15 18:43:35.116+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Users\cpapenfuss\AppData\Roaming\npm
+2015-12-15 18:43:35.116+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Boot2Docker for Windows
+2015-12-15 18:43:35.116+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Microsoft VS Code\bin
+2015-12-15 18:43:35.116+0000 INFO  [o.n.k.i.DiagnosticsManager]: D:\texlive\2014\bin\win32
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Workspace\cefoot.git\famTree
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: System.properties:
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.boot.library.path = C:\Program Files\Java\jdk1.8.0_60\jre\bin
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: path.separator = ;
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.encoding.pkg = sun.io
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.country = DE
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.script = 
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.java.launcher = SUN_STANDARD
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.os.patch.level = 
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: PID = 1012
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.dir = C:\Workspace\cefoot.git\famTree
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.jboss.logging.provider = slf4j
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.variant = 
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.jnu.encoding = Cp1252
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.home = C:\Users\cpapenfuss
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: catalina.useNaming = false
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.timezone = Europe/Berlin
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.encoding = Cp1252
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: catalina.home = C:\Users\cpapenfuss\AppData\Local\Temp\tomcat.3236289498818231024.8080
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.name = cpapenfuss
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.java.command = hello.Application
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.arch.data.model = 64
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.language = de
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: awt.toolkit = sun.awt.windows.WToolkit
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: catalina.base = C:\Users\cpapenfuss\AppData\Local\Temp\tomcat.3236289498818231024.8080
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.separator = \
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.io.unicode.encoding = UnicodeLittle
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.cpu.endian = little
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.desktop = windows
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.cpu.isalist = amd64
+2015-12-15 18:43:35.132+0000 INFO  [o.n.k.i.DiagnosticsManager]: Network information:
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Software Loopback Interface 1:
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 127.0.0.1
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 0:0:0:0:0:0:0:1
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Kerneldebugger-Netzwerkadapter:
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Intel(R) Dual Band Wireless-AC 7260:
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Virtueller Microsoft-Adapter für direktes WiFi:
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:e9c9:336c:9fa8:95e5%wlan1
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft-ISATAP-Adapter:
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft-ISATAP-Adapter #4:
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:0:5efe:c0a8:a801%net1
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Dell GigabitEthernet:
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN-Miniport (SSTP):
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN-Miniport (IP):
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN-Miniport (PPPOE):
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN-Miniport (IKEv2):
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN-Miniport (PPTP):
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN-Miniport (IPv6):
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN-Miniport (L2TP):
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN-Miniport (Netzwerkmonitor):
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Asynchroner RAS-Adapter:
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Von Microsoft gehosteter, virtueller Netzwerkadapter:
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:49a2:fdf9:6421:599f%wlan2
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Teredo Tunneling Pseudo-Interface:
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 2001:0:5ef5:79fd:28ba:2c7b:3f57:fd80
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:28ba:2c7b:3f57:fd80%net6
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Bluetooth-Gerät (PAN):
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Bluetooth-Gerät (RFCOMM-Protokoll-TDI):
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Dell GigabitEthernet:
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface LAN7500 USB 2.0 to Ethernet 10/100/1000 Adapter:
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft-ISATAP-Adapter #3:
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft-ISATAP-Adapter #2:
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:0:5efe:c0a8:27f%net9
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft-ISATAP-Adapter #8:
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft-ISATAP-Adapter #5:
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft-ISATAP-Adapter #6:
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface VirtualBox Host-Only Ethernet Adapter:
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 192.168.168.1
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:2579:bc92:c99c:5444%eth8
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Network Adapter Multiplexor Default Miniport:
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Network Adapter Multiplexor Driver:
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 192.168.2.127
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fda9:1d8e:ea58:0:49cd:e91c:3f8f:a30d
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fda9:1d8e:ea58:0:5d53:feb:b2d5:b569
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:49cd:e91c:3f8f:a30d%eth10
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Remote NDIS based Internet Sharing Device:
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface VirtualBox Host-Only Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface VirtualBox Host-Only Ethernet Adapter-VirtualBox NDIS Light-Weight Filter-0000:
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface VirtualBox Host-Only Ethernet Adapter-QoS Packet Scheduler-0000:
+2015-12-15 18:43:35.413+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface VirtualBox Host-Only Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2015-12-15 18:43:35.429+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Intel(R) Dual Band Wireless-AC 7260-WFP Native MAC Layer LightWeight Filter-0000:
+2015-12-15 18:43:35.429+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Intel(R) Dual Band Wireless-AC 7260-Virtual WiFi Filter Driver-0000:
+2015-12-15 18:43:35.429+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Intel(R) Dual Band Wireless-AC 7260-Native WiFi Filter Driver-0000:
+2015-12-15 18:43:35.429+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface MsBridge:
+2015-12-15 18:43:35.429+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Network Adapter Multiplexor Driver-WFP Native MAC Layer LightWeight Filter-0000:
+2015-12-15 18:43:35.429+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Network Adapter Multiplexor Driver-Microsoft Network Bridge-0000:
+2015-12-15 18:43:35.429+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Network Adapter Multiplexor Driver-VirtualBox NDIS Light-Weight Filter-0000:
+2015-12-15 18:43:35.429+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Network Adapter Multiplexor Driver-QoS Packet Scheduler-0000:
+2015-12-15 18:43:35.429+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Network Adapter Multiplexor Driver-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2015-12-15 18:43:35.429+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Von Microsoft gehosteter, virtueller Netzwerkadapter-WFP Native MAC Layer LightWeight Filter-0000:
+2015-12-15 18:43:35.429+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Von Microsoft gehosteter, virtueller Netzwerkadapter-Native WiFi Filter Driver-0000:
+2015-12-15 18:43:35.429+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Von Microsoft gehosteter, virtueller Netzwerkadapter-VirtualBox NDIS Light-Weight Filter-0000:
+2015-12-15 18:43:35.429+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Von Microsoft gehosteter, virtueller Netzwerkadapter-QoS Packet Scheduler-0000:
+2015-12-15 18:43:35.429+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Von Microsoft gehosteter, virtueller Netzwerkadapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2015-12-15 18:43:35.429+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Virtueller Microsoft-Adapter für direktes WiFi-WFP Native MAC Layer LightWeight Filter-0000:
+2015-12-15 18:43:35.429+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Virtueller Microsoft-Adapter für direktes WiFi-Native WiFi Filter Driver-0000:
+2015-12-15 18:43:35.429+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Virtueller Microsoft-Adapter für direktes WiFi-VirtualBox NDIS Light-Weight Filter-0000:
+2015-12-15 18:43:35.429+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Virtueller Microsoft-Adapter für direktes WiFi-QoS Packet Scheduler-0000:
+2015-12-15 18:43:35.429+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Virtueller Microsoft-Adapter für direktes WiFi-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2015-12-15 18:43:35.429+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- INITIALIZED diagnostics END ---
+2015-12-15 18:43:35.647+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.relationshiptypestore.db.names non clean shutdown detected
+2015-12-15 18:43:35.663+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2015-12-15 18:43:35.663+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.relationshiptypestore.db non clean shutdown detected
+2015-12-15 18:43:35.663+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2015-12-15 18:43:35.663+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.labeltokenstore.db.names non clean shutdown detected
+2015-12-15 18:43:35.663+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore.labeltokenstore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2015-12-15 18:43:35.663+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.labeltokenstore.db non clean shutdown detected
+2015-12-15 18:43:35.663+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore.labeltokenstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2015-12-15 18:43:35.679+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.propertystore.db.strings non clean shutdown detected
+2015-12-15 18:43:35.679+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore.propertystore.db.strings] brickCount=0 brickSize=197120b mappedMem=197132288b (storeSize=128b)
+2015-12-15 18:43:35.679+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.propertystore.db.index.keys non clean shutdown detected
+2015-12-15 18:43:35.679+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2015-12-15 18:43:35.679+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.propertystore.db.index non clean shutdown detected
+2015-12-15 18:43:35.679+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2015-12-15 18:43:35.694+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.propertystore.db.arrays non clean shutdown detected
+2015-12-15 18:43:35.694+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore.propertystore.db.arrays] brickCount=0 brickSize=223232b mappedMem=223346688b (storeSize=128b)
+2015-12-15 18:43:35.710+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.propertystore.db non clean shutdown detected
+2015-12-15 18:43:35.710+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore.propertystore.db] brickCount=0 brickSize=2317320b mappedMem=231735296b (storeSize=0b)
+2015-12-15 18:43:35.725+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.relationshipstore.db non clean shutdown detected
+2015-12-15 18:43:35.725+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore.relationshipstore.db] brickCount=0 brickSize=2841618b mappedMem=284164096b (storeSize=0b)
+2015-12-15 18:43:35.725+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.nodestore.db.labels non clean shutdown detected
+2015-12-15 18:43:35.725+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore.nodestore.db.labels] brickCount=0 brickSize=0b mappedMem=0b (storeSize=68b)
+2015-12-15 18:43:35.725+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.nodestore.db non clean shutdown detected
+2015-12-15 18:43:35.725+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore.nodestore.db] brickCount=0 brickSize=639630b mappedMem=63963136b (storeSize=0b)
+2015-12-15 18:43:35.741+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.schemastore.db non clean shutdown detected
+2015-12-15 18:43:35.741+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore.schemastore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=64b)
+2015-12-15 18:43:35.741+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.relationshipgroupstore.db non clean shutdown detected
+2015-12-15 18:43:35.741+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore.relationshipgroupstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=25b)
+2015-12-15 18:43:35.757+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore non clean shutdown detected
+2015-12-15 18:43:35.757+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=81b)
+2015-12-15 18:43:36.007+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore]: No lucene scan store index found, this might just be first use. Preparing to rebuild.
+2015-12-15 18:43:36.230+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Non clean shutdown detected on log [hello.db\nioneo_logical.log.1]. Recovery started ...
+2015-12-15 18:43:36.230+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: [hello.db\nioneo_logical.log.1] logVersion=0 with committed tx=1
+2015-12-15 18:43:36.246+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: [hello.db\nioneo_logical.log.1] entries found=0 lastEntryPos=16
+2015-12-15 18:43:36.246+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Opened logical log [hello.db\nioneo_logical.log.1] version=0, lastTxId=-1 (recovered)
+2015-12-15 18:43:36.246+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: XaResourceManager[nioneo_logical.log] sorting 0 xids
+2015-12-15 18:43:36.246+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: XaResourceManager[nioneo_logical.log] checkRecoveryComplete 0 xids
+2015-12-15 18:43:36.293+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.relationshiptypestore.db.names rebuild id generator, highId=2 defragged count=0
+2015-12-15 18:43:36.324+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.relationshiptypestore.db rebuild id generator, highId=0 defragged count=0
+2015-12-15 18:43:36.355+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.labeltokenstore.db.names rebuild id generator, highId=2 defragged count=0
+2015-12-15 18:43:36.387+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.labeltokenstore.db rebuild id generator, highId=0 defragged count=0
+2015-12-15 18:43:36.418+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.propertystore.db.index.keys rebuild id generator, highId=2 defragged count=0
+2015-12-15 18:43:36.449+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.propertystore.db.index rebuild id generator, highId=0 defragged count=0
+2015-12-15 18:43:36.480+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.propertystore.db.strings rebuild id generator, highId=2 defragged count=0
+2015-12-15 18:43:36.512+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.propertystore.db.arrays rebuild id generator, highId=2 defragged count=0
+2015-12-15 18:43:36.527+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.propertystore.db rebuild id generator, highId=0 defragged count=0
+2015-12-15 18:43:36.527+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.relationshipstore.db rebuild id generator, highId=0 defragged count=0
+2015-12-15 18:43:36.543+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.nodestore.db.labels rebuild id generator, highId=2 defragged count=0
+2015-12-15 18:43:36.558+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.nodestore.db rebuild id generator, highId=0 defragged count=0
+2015-12-15 18:43:36.574+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.schemastore.db rebuild id generator, highId=2 defragged count=0
+2015-12-15 18:43:36.590+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.relationshipgroupstore.db rebuild id generator, highId=1 defragged count=0
+2015-12-15 18:43:36.590+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore rebuild id generator, highId=9 defragged count=0
+2015-12-15 18:43:36.590+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: XaResourceManager[nioneo_logical.log] recovery completed.
+2015-12-15 18:43:36.590+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Recovery on log [hello.db\nioneo_logical.log.1] completed.
+2015-12-15 18:43:36.605+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore]: Rebuilding lucene scan store, this may take a while
+2015-12-15 18:43:36.605+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore]: Lucene scan store rebuilt (roughly -1 nodes)
+2015-12-15 18:43:36.605+0000 INFO  [o.n.k.i.t.TxManager]: TM opening log: hello.db\tm_tx_log.1
+2015-12-15 18:43:36.621+0000 INFO  [o.n.k.i.t.KernelHealth]: Kernel health set to OK
+2015-12-15 18:43:36.652+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Non clean shutdown detected on log [hello.db\index\lucene.log.1]. Recovery started ...
+2015-12-15 18:43:36.652+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: [hello.db\index\lucene.log.1] logVersion=0 with committed tx=1
+2015-12-15 18:43:36.683+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: [hello.db\index\lucene.log.1] entries found=3 lastEntryPos=213
+2015-12-15 18:43:36.683+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Opened logical log [hello.db\index\lucene.log.1] version=0, lastTxId=2 (recovered)
+2015-12-15 18:43:36.683+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: XaResourceManager[lucene.log] sorting 1 xids
+2015-12-15 18:43:36.683+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: XaResourceManager[lucene.log] checkRecoveryComplete 0 xids
+2015-12-15 18:43:36.683+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: XaResourceManager[lucene.log] recovery completed.
+2015-12-15 18:43:36.683+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Recovery on log [hello.db\index\lucene.log.1] completed.
+2015-12-15 18:43:36.699+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2015-12-15 18:43:36.699+0000 INFO  [o.n.k.i.DiagnosticsManager]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId{creationTime=1447825504542, randomId=-4352446933553122534, storeVersion=14406081294923270, upgradeTime=1447825504542, upgradeId=-4352446933553122534}
+2015-12-15 18:43:36.699+0000 INFO  [o.n.k.i.DiagnosticsManager]: Kernel version: Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.1.5
+2015-12-15 18:43:36.699+0000 INFO  [o.n.k.i.DiagnosticsManager]: Neo4j component versions:
+2015-12-15 18:43:36.715+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 1.9 (neo4j-cypher-compiler-1.9), version: 2.0.3; revision: 2.0.3:2.0-maint:72/307c563c11b75fdc71cfa6df05daf9b08d6c37dc
+2015-12-15 18:43:36.715+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j Community (neo4j), version: 2.1.5; revision: 2.1.5:2.1-maint:529/45c3cc04946c2b0e243e48c8252e40cb85931744
+2015-12-15 18:43:36.715+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Commons (neo4j-cypher-commons), version: 2.1.5; revision: 2.1.5:2.1-maint:529/45c3cc04946c2b0e243e48c8252e40cb85931744
+2015-12-15 18:43:36.715+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neo4j-udc, version: 2.1.5; revision: 2.1.5:2.1-maint:529/45c3cc04946c2b0e243e48c8252e40cb85931744
+2015-12-15 18:43:36.715+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Lucene Index (neo4j-lucene-index), version: 2.1.5; revision: 2.1.5:2.1-maint:529/45c3cc04946c2b0e243e48c8252e40cb85931744
+2015-12-15 18:43:36.715+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 2.0 (neo4j-cypher-compiler-2.0), version: 2.0.3; revision: 2.0.3:2.0-maint:72/307c563c11b75fdc71cfa6df05daf9b08d6c37dc
+2015-12-15 18:43:36.715+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.1.5; revision: 2.1.5:2.1-maint:529/45c3cc04946c2b0e243e48c8252e40cb85931744
+2015-12-15 18:43:36.715+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Matching (neo4j-graph-matching), version: 2.1.5; revision: 2.1.5:2.1-maint:529/45c3cc04946c2b0e243e48c8252e40cb85931744
+2015-12-15 18:43:36.715+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - JMX support (neo4j-jmx), version: 2.1.5; revision: 2.1.5:2.1-maint:529/45c3cc04946c2b0e243e48c8252e40cb85931744
+2015-12-15 18:43:36.715+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher (neo4j-cypher), version: 2.1.5; revision: 2.1.5:2.1-maint:529/45c3cc04946c2b0e243e48c8252e40cb85931744
+2015-12-15 18:43:36.715+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Algorithms (neo4j-graph-algo), version: 2.1.5; revision: 2.1.5:2.1-maint:529/45c3cc04946c2b0e243e48c8252e40cb85931744
+2015-12-15 18:43:36.715+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]: Store versions:
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]: Store versions:
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NeoStore v0.A.3
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]:   SchemaStore v0.A.3
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NodeStore v0.A.3
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipStore v0.A.3
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipTypeStore v0.A.3
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]:   LabelTokenStore v0.A.3
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyStore v0.A.3
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyIndexStore v0.A.3
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]:   StringPropertyStore v0.A.3
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]:   ArrayPropertyStore v0.A.3
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipGroupStore v0.A.3
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]: Id usage:
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]: Id usage:
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]:   SchemaStore: used=2 high=1
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NodeStore: used=0 high=-1
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipStore: used=0 high=-1
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipTypeStore: used=0 high=-1
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]:   LabelTokenStore: used=0 high=-1
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyStore: used=0 high=-1
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyIndexStore: used=0 high=-1
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]:   StringPropertyStore: used=2 high=1
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]:   ArrayPropertyStore: used=2 high=1
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipGroupStore: used=1 high=0
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2015-12-15 18:43:36.730+0000 INFO  [o.n.k.i.DiagnosticsManager]: Disk space on partition (Total / Free / Free %): 246655479808 / 40893591552 / 16
+Storage files: (filename : modification date - size)
+2015-12-15 18:43:36.746+0000 INFO  [o.n.k.i.DiagnosticsManager]:   active_tx_log: 2015-12-15T19:42:33+0100 - 11,00 B
+2015-12-15 18:43:36.746+0000 INFO  [o.n.k.i.DiagnosticsManager]:   index:
+2015-12-15 18:43:36.746+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene-store.db: 2015-12-15T19:42:33+0100 - 40,00 B
+2015-12-15 18:43:36.746+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.1: 2015-12-15T19:42:33+0100 - 219,00 B
+2015-12-15 18:43:36.746+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.active: 2015-12-15T19:42:33+0100 - 4,00 B
+2015-12-15 18:43:36.746+0000 INFO  [o.n.k.i.DiagnosticsManager]:   - Total: 2015-12-15T19:42:33+0100 - 263,00 B
+2015-12-15 18:43:36.746+0000 INFO  [o.n.k.i.DiagnosticsManager]:   index.db: 2015-12-15T19:42:33+0100 - 119,00 B
+2015-12-15 18:43:36.746+0000 INFO  [o.n.k.i.DiagnosticsManager]:   lock: 2015-12-15T19:42:34+0100 - 0,00 B
+2015-12-15 18:43:36.746+0000 INFO  [o.n.k.i.DiagnosticsManager]:   messages.log: 2015-12-15T19:43:35+0100 - 101,74 kB
+2015-12-15 18:43:36.746+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore: 2015-12-15T19:42:34+0100 - 81,00 B
+2015-12-15 18:43:36.746+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.id: 2015-12-15T19:43:36+0100 - 9,00 B
+2015-12-15 18:43:36.746+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db: 2015-12-15T19:42:33+0100 - 0,00 B
+2015-12-15 18:43:36.746+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.id: 2015-12-15T19:43:36+0100 - 9,00 B
+2015-12-15 18:43:36.746+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.names: 2015-12-15T19:42:33+0100 - 38,00 B
+2015-12-15 18:43:36.746+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.names.id: 2015-12-15T19:43:36+0100 - 9,00 B
+2015-12-15 18:43:36.762+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db: 2015-12-15T19:42:34+0100 - 0,00 B
+2015-12-15 18:43:36.762+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.id: 2015-12-15T19:43:36+0100 - 9,00 B
+2015-12-15 18:43:36.762+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.labels: 2015-12-15T19:42:33+0100 - 68,00 B
+2015-12-15 18:43:36.762+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.labels.id: 2015-12-15T19:43:36+0100 - 9,00 B
+2015-12-15 18:43:36.762+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db: 2015-12-15T19:42:33+0100 - 0,00 B
+2015-12-15 18:43:36.762+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.arrays: 2015-12-15T19:42:33+0100 - 128,00 B
+2015-12-15 18:43:36.762+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.arrays.id: 2015-12-15T19:43:36+0100 - 9,00 B
+2015-12-15 18:43:36.762+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.id: 2015-12-15T19:43:36+0100 - 9,00 B
+2015-12-15 18:43:36.762+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index: 2015-12-15T19:42:33+0100 - 0,00 B
+2015-12-15 18:43:36.762+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.id: 2015-12-15T19:43:36+0100 - 9,00 B
+2015-12-15 18:43:36.762+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.keys: 2015-12-15T19:42:34+0100 - 38,00 B
+2015-12-15 18:43:36.762+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.keys.id: 2015-12-15T19:43:36+0100 - 9,00 B
+2015-12-15 18:43:36.762+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.strings: 2015-12-15T19:42:34+0100 - 128,00 B
+2015-12-15 18:43:36.762+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.strings.id: 2015-12-15T19:43:36+0100 - 9,00 B
+2015-12-15 18:43:36.762+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipgroupstore.db: 2015-12-15T19:42:33+0100 - 25,00 B
+2015-12-15 18:43:36.762+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipgroupstore.db.id: 2015-12-15T19:43:36+0100 - 9,00 B
+2015-12-15 18:43:36.762+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipstore.db: 2015-12-15T19:42:34+0100 - 0,00 B
+2015-12-15 18:43:36.777+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipstore.db.id: 2015-12-15T19:43:36+0100 - 9,00 B
+2015-12-15 18:43:36.777+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db: 2015-12-15T19:42:33+0100 - 0,00 B
+2015-12-15 18:43:36.777+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.id: 2015-12-15T19:43:36+0100 - 9,00 B
+2015-12-15 18:43:36.777+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.names: 2015-12-15T19:42:33+0100 - 38,00 B
+2015-12-15 18:43:36.777+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.names.id: 2015-12-15T19:43:36+0100 - 9,00 B
+2015-12-15 18:43:36.777+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.schemastore.db: 2015-12-15T19:42:33+0100 - 64,00 B
+2015-12-15 18:43:36.777+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.schemastore.db.id: 2015-12-15T19:43:36+0100 - 9,00 B
+2015-12-15 18:43:36.777+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.1: 2015-12-15T19:42:33+0100 - 16,00 B
+2015-12-15 18:43:36.777+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.active: 2015-12-15T19:42:33+0100 - 4,00 B
+2015-12-15 18:43:36.777+0000 INFO  [o.n.k.i.DiagnosticsManager]:   schema:
+2015-12-15 18:43:36.777+0000 INFO  [o.n.k.i.DiagnosticsManager]:     label:
+2015-12-15 18:43:36.793+0000 INFO  [o.n.k.i.DiagnosticsManager]:       lucene:
+2015-12-15 18:43:36.793+0000 INFO  [o.n.k.i.DiagnosticsManager]:         segments.gen: 2015-12-15T19:43:36+0100 - 20,00 B
+2015-12-15 18:43:36.793+0000 INFO  [o.n.k.i.DiagnosticsManager]:         segments_1: 2015-12-15T19:43:36+0100 - 32,00 B
+2015-12-15 18:43:36.793+0000 INFO  [o.n.k.i.DiagnosticsManager]:         write.lock: 2015-12-15T19:43:36+0100 - 0,00 B
+2015-12-15 18:43:36.793+0000 INFO  [o.n.k.i.DiagnosticsManager]:       - Total: 2015-12-15T19:43:36+0100 - 52,00 B
+2015-12-15 18:43:36.793+0000 INFO  [o.n.k.i.DiagnosticsManager]:     - Total: 2015-12-15T19:43:36+0100 - 52,00 B
+2015-12-15 18:43:36.793+0000 INFO  [o.n.k.i.DiagnosticsManager]:   - Total: 2015-12-15T19:42:33+0100 - 52,00 B
+2015-12-15 18:43:36.793+0000 INFO  [o.n.k.i.DiagnosticsManager]:   store_lock: 2015-12-15T19:42:34+0100 - 0,00 B
+2015-12-15 18:43:36.793+0000 INFO  [o.n.k.i.DiagnosticsManager]:   tm_tx_log.1: 2015-12-15T19:42:33+0100 - 0,00 B
+2015-12-15 18:43:36.793+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2015-12-15 18:43:36.918+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Database is now ready
+2015-12-15 18:47:58.491+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 7 or OpenJDK(TM) 7.
+2015-12-15 18:47:58.507+0000 INFO  [o.n.k.InternalAbstractGraphDatabase]: No locking implementation specified, defaulting to 'community'
+2015-12-15 18:47:58.601+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- INITIALIZED diagnostics START ---
+2015-12-15 18:47:58.601+0000 INFO  [o.n.k.i.DiagnosticsManager]: Neo4j Kernel properties:
+2015-12-15 18:47:58.601+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.propertystore.db.strings.mapped_memory=188M
+2015-12-15 18:47:58.601+0000 INFO  [o.n.k.i.DiagnosticsManager]: ephemeral=false
+2015-12-15 18:47:58.601+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.nodestore.db.mapped_memory=61M
+2015-12-15 18:47:58.601+0000 INFO  [o.n.k.i.DiagnosticsManager]: store_dir=hello.db
+2015-12-15 18:47:58.601+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.propertystore.db.arrays.mapped_memory=213M
+2015-12-15 18:47:58.601+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.propertystore.db.mapped_memory=221M
+2015-12-15 18:47:58.601+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.relationshipstore.db.mapped_memory=271M
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: Diagnostics providers:
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.kernel.configuration.Config
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.kernel.info.DiagnosticsManager
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: SYSTEM_MEMORY
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: JAVA_MEMORY
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: OPERATING_SYSTEM
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: JAVA_VIRTUAL_MACHINE
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: CLASSPATH
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: LIBRARY_PATH
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: SYSTEM_PROPERTIES
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: NETWORK
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: System memory information:
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total Physical memory: 15,91 GB
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free Physical memory: 10,47 GB
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: Committed virtual memory: 521,34 MB
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total swap space: 18,28 GB
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free swap space: 11,69 GB
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: JVM memory information:
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free  memory: 186,57 MB
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total memory: 211,50 MB
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: Max   memory: 3,54 GB
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: Garbage Collector: PS Scavenge: [PS Eden Space, PS Survivor Space]
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: Garbage Collector: PS MarkSweep: [PS Eden Space, PS Survivor Space, PS Old Gen]
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Code Cache (Non-heap memory): committed=10,13 MB, used=9,60 MB, max=240,00 MB, threshold=0,00 B
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Metaspace (Non-heap memory): committed=26,75 MB, used=26,31 MB, max=-1,00 B, threshold=0,00 B
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Compressed Class Space (Non-heap memory): committed=3,50 MB, used=3,33 MB, max=1,00 GB, threshold=0,00 B
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: PS Eden Space (Heap memory): committed=100,00 MB, used=6,48 MB, max=1,30 GB, threshold=?
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: PS Survivor Space (Heap memory): committed=10,50 MB, used=9,99 MB, max=10,50 MB, threshold=?
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: PS Old Gen (Heap memory): committed=101,00 MB, used=8,47 MB, max=2,65 GB, threshold=0,00 B
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: Operating system information:
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: Operating System: Windows 8.1; version: 6.3; arch: amd64; cpus: 8
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: Process id: 8012@ws201976
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: Byte order: LITTLE_ENDIAN
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: Local timezone: Europe/Berlin
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: JVM information:
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Name: Java HotSpot(TM) 64-Bit Server VM
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Vendor: Oracle Corporation
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Version: 25.60-b23
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: JIT compiler: HotSpot 64-Bit Tiered Compilers
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Arguments: []
+2015-12-15 18:47:58.616+0000 INFO  [o.n.k.i.DiagnosticsManager]: Java classpath:
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/apache/tomcat/embed/tomcat-embed-websocket/8.0.28/tomcat-embed-websocket-8.0.28.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/neo4j/neo4j-kernel/2.1.5/neo4j-kernel-2.1.5.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/com/github/fge/json-patch/1.7/json-patch-1.7.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/hateoas/spring-hateoas/0.16.0.RELEASE/spring-hateoas-0.16.0.RELEASE.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/hibernate/hibernate-validator/5.1.3.Final/hibernate-validator-5.1.3.Final.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jdk1.8.0_60\jre\lib\jfr.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/data/spring-data-rest-core/2.2.4.RELEASE/spring-data-rest-core-2.2.4.RELEASE.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/parboiled/parboiled-core/1.1.6/parboiled-core-1.1.6.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/neo4j/neo4j-cypher-dsl/2.0.1/neo4j-cypher-dsl-2.0.1.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/slf4j/jul-to-slf4j/1.7.12/jul-to-slf4j-1.7.12.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_60/jre/lib/ext/jfxrt.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/boot/spring-boot-starter/1.2.7.RELEASE/spring-boot-starter-1.2.7.RELEASE.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/spring-beans/4.1.8.RELEASE/spring-beans-4.1.8.RELEASE.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/neo4j/neo4j/2.1.5/neo4j-2.1.5.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/boot/spring-boot-autoconfigure/1.2.7.RELEASE/spring-boot-autoconfigure-1.2.7.RELEASE.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/com/github/fge/jackson-coreutils/1.6/jackson-coreutils-1.6.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/parboiled/parboiled-scala_2.10/1.1.6/parboiled-scala_2.10-1.1.6.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/atteo/evo-inflector/1.2/evo-inflector-1.2.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_60/jre/lib/ext/sunmscapi.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/neo4j/neo4j-cypher/2.1.5/neo4j-cypher-2.1.5.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_60/jre/lib/ext/nashorn.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/aspectj/aspectjweaver/1.8.7/aspectjweaver-1.8.7.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jdk1.8.0_60\jre\lib\sunrsasign.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jdk1.8.0_60\jre\classes
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/boot/spring-boot-starter-tomcat/1.2.7.RELEASE/spring-boot-starter-tomcat-1.2.7.RELEASE.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_60/jre/lib/ext/localedata.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/spring-aspects/4.1.8.RELEASE/spring-aspects-4.1.8.RELEASE.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/com/fasterxml/classmate/1.0.0/classmate-1.0.0.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/neo4j/neo4j-jmx/2.1.5/neo4j-jmx-2.1.5.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/spring-webmvc/4.1.8.RELEASE/spring-webmvc-4.1.8.RELEASE.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_60/jre/lib/ext/zipfs.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/neo4j/neo4j-graph-algo/2.1.5/neo4j-graph-algo-2.1.5.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/spring-web/4.1.8.RELEASE/spring-web-4.1.8.RELEASE.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_60/jre/lib/ext/sunpkcs11.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jdk1.8.0_60\jre\lib\charsets.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_60/jre/lib/ext/jaccess.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/neo4j/neo4j-cypher-compiler-1.9/2.0.3/neo4j-cypher-compiler-1.9-2.0.3.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/yaml/snakeyaml/1.14/snakeyaml-1.14.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/neo4j/neo4j-lucene-index/2.1.5/neo4j-lucene-index-2.1.5.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/apache/tomcat/embed/tomcat-embed-logging-juli/8.0.28/tomcat-embed-logging-juli-8.0.28.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/slf4j/log4j-over-slf4j/1.7.12/log4j-over-slf4j-1.7.12.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_60/jre/lib/ext/sunec.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/com/googlecode/concurrentlinkedhashmap/concurrentlinkedhashmap-lru/1.3.1/concurrentlinkedhashmap-lru-1.3.1.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/boot/spring-boot/1.2.7.RELEASE/spring-boot-1.2.7.RELEASE.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jdk1.8.0_60\jre\lib\jsse.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/boot/spring-boot-starter-data-rest/1.2.7.RELEASE/spring-boot-starter-data-rest-1.2.7.RELEASE.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/com/fasterxml/jackson/core/jackson-core/2.4.6/jackson-core-2.4.6.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/data/spring-data-rest-webmvc/2.2.4.RELEASE/spring-data-rest-webmvc-2.2.4.RELEASE.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/net/sf/opencsv/opencsv/2.0/opencsv-2.0.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/spring-core/4.1.8.RELEASE/spring-core-4.1.8.RELEASE.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jdk1.8.0_60\jre\lib\resources.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_60/jre/lib/ext/dnsns.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jdk1.8.0_60\jre\lib\rt.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/com/fasterxml/jackson/core/jackson-databind/2.4.6/jackson-databind-2.4.6.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/C:/Workspace/cefoot.git/famTree/target/classes/
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/aspectj/aspectjrt/1.8.7/aspectjrt-1.8.7.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/apache/lucene/lucene-core/3.6.2/lucene-core-3.6.2.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/com/fasterxml/jackson/core/jackson-annotations/2.4.6/jackson-annotations-2.4.6.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/data/spring-data-neo4j/3.2.4.RELEASE/spring-data-neo4j-3.2.4.RELEASE.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/apache/tomcat/embed/tomcat-embed-core/8.0.28/tomcat-embed-core-8.0.28.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/com/github/fge/msg-simple/1.1/msg-simple-1.1.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/boot/spring-boot-starter-web/1.2.7.RELEASE/spring-boot-starter-web-1.2.7.RELEASE.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/slf4j/jcl-over-slf4j/1.7.12/jcl-over-slf4j-1.7.12.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] C:\Program Files\Java\jdk1.8.0_60\jre\lib\jce.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/com/github/fge/btf/1.2/btf-1.2.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/data/spring-data-commons/1.9.4.RELEASE/spring-data-commons-1.9.4.RELEASE.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/neo4j/neo4j-cypher-commons/2.1.5/neo4j-cypher-commons-2.1.5.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/neo4j/neo4j-primitive-collections/2.1.5/neo4j-primitive-collections-2.1.5.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/apache/tomcat/embed/tomcat-embed-el/8.0.28/tomcat-embed-el-8.0.28.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/spring-expression/4.1.8.RELEASE/spring-expression-4.1.8.RELEASE.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_60/jre/lib/ext/cldrdata.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/boot/spring-boot-starter-logging/1.2.7.RELEASE/spring-boot-starter-logging-1.2.7.RELEASE.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/spring-aop/4.1.8.RELEASE/spring-aop-4.1.8.RELEASE.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/plugin/spring-plugin-core/1.1.0.RELEASE/spring-plugin-core-1.1.0.RELEASE.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/com/google/guava/guava/16.0.1/guava-16.0.1.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/neo4j/neo4j-graph-matching/2.1.5/neo4j-graph-matching-2.1.5.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/spring-tx/4.1.8.RELEASE/spring-tx-4.1.8.RELEASE.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/springframework/spring-context/4.1.8.RELEASE/spring-context-4.1.8.RELEASE.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/neo4j/neo4j-cypher-compiler-2.0/2.0.3/neo4j-cypher-compiler-2.0-2.0.3.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_60/jre/lib/ext/access-bridge-64.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/neo4j/neo4j-cypher-compiler-2.1/2.1.5/neo4j-cypher-compiler-2.1-2.1.5.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/C:/Program%20Files/Java/jdk1.8.0_60/jre/lib/ext/sunjce_provider.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/D:/maven_repository/org/neo4j/neo4j-udc/2.1.5/neo4j-udc-2.1.5.jar
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: Library path:
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Java\jdk1.8.0_60\bin
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\Sun\Java\bin
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\System32
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\ProgramData\Oracle\Java\javapath
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Intel\iCLS Client
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Intel\iCLS Client
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\System32
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\System32\wbem
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\System32\WindowsPowerShell\v1.0
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Intel\Intel(R) Management Engine Components\DAL
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Intel\Intel(R) Management Engine Components\IPT
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Intel\WiFi\bin
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Common Files\Intel\WirelessCommon
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Windows Live\Shared
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Subversion\bin
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Microsoft SQL Server\110\Tools\Binn
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: D:\Programme\apache-maven-3.2.1\bin
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Workspace\cefoot.git\famTree\%SDKHOME%\tools
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Workspace\cefoot.git\famTree\%SDKHOME%\platform-tools
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Microsoft SQL Server\110\Tools\Binn
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Microsoft SQL Server\100\Tools\Binn
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Microsoft SQL Server\100\DTS\Binn
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Oracle\VirtualBox
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\nodejs
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\TortoiseGit\bin
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Microsoft SQL Server\100\Tools\Binn
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Microsoft SQL Server\100\DTS\Binn
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\nodejs
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: D:\Programme\adt-bundle-windows-x86_64-20140702\sdk\platform-tools
+2015-12-15 18:47:58.679+0000 INFO  [o.n.k.i.DiagnosticsManager]: D:\Programme\adt-bundle-windows-x86_64-20140702\sdk\tools
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: D:\Programme\apache-ant-1.9.4\bin
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\GNU\GnuPG\pub
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Intel\WiFi\bin
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Common Files\Intel\WirelessCommon
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Microsoft\Web Platform Installer
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\HTML Help Workshop
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: D:\Programme\HashiCorp\Vagrant\bin
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Microsoft SQL Server\110\Tools\Binn
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Windows\System32\config\systemprofile\.dnx\bin
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Microsoft DNX\Dnvm
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Microsoft SQL Server\120\Tools\Binn
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Users\cpapenfuss\AppData\Roaming\npm
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files\Boot2Docker for Windows
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Program Files (x86)\Microsoft VS Code\bin
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: D:\texlive\2014\bin\win32
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: C:\Workspace\cefoot.git\famTree
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: System.properties:
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.boot.library.path = C:\Program Files\Java\jdk1.8.0_60\jre\bin
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: path.separator = ;
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.encoding.pkg = sun.io
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.country = DE
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.script = 
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.java.launcher = SUN_STANDARD
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.os.patch.level = 
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: PID = 8012
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.dir = C:\Workspace\cefoot.git\famTree
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.jboss.logging.provider = slf4j
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.variant = 
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.jnu.encoding = Cp1252
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.home = C:\Users\cpapenfuss
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: catalina.useNaming = false
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.timezone = Europe/Berlin
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.encoding = Cp1252
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: catalina.home = C:\Users\cpapenfuss\AppData\Local\Temp\tomcat.7808208508508285580.8080
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.name = cpapenfuss
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.java.command = hello.Application
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.arch.data.model = 64
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.language = de
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: awt.toolkit = sun.awt.windows.WToolkit
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: catalina.base = C:\Users\cpapenfuss\AppData\Local\Temp\tomcat.7808208508508285580.8080
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.separator = \
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.io.unicode.encoding = UnicodeLittle
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.cpu.endian = little
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.desktop = windows
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.cpu.isalist = amd64
+2015-12-15 18:47:58.694+0000 INFO  [o.n.k.i.DiagnosticsManager]: Network information:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Software Loopback Interface 1:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 127.0.0.1
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 0:0:0:0:0:0:0:1
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Kerneldebugger-Netzwerkadapter:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Intel(R) Dual Band Wireless-AC 7260:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Virtueller Microsoft-Adapter für direktes WiFi:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:e9c9:336c:9fa8:95e5%wlan1
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft-ISATAP-Adapter:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft-ISATAP-Adapter #4:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:0:5efe:c0a8:a801%net1
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Dell GigabitEthernet:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN-Miniport (SSTP):
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN-Miniport (IP):
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN-Miniport (PPPOE):
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN-Miniport (IKEv2):
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN-Miniport (PPTP):
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN-Miniport (IPv6):
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN-Miniport (L2TP):
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface WAN-Miniport (Netzwerkmonitor):
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Asynchroner RAS-Adapter:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Von Microsoft gehosteter, virtueller Netzwerkadapter:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:49a2:fdf9:6421:599f%wlan2
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Teredo Tunneling Pseudo-Interface:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 2001:0:5ef5:79fd:28ba:2c7b:3f57:fd80
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:28ba:2c7b:3f57:fd80%net6
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Bluetooth-Gerät (PAN):
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Bluetooth-Gerät (RFCOMM-Protokoll-TDI):
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Dell GigabitEthernet:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface LAN7500 USB 2.0 to Ethernet 10/100/1000 Adapter:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft-ISATAP-Adapter #3:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft-ISATAP-Adapter #2:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:0:5efe:c0a8:27f%net9
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft-ISATAP-Adapter #8:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft-ISATAP-Adapter #5:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft-ISATAP-Adapter #6:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface VirtualBox Host-Only Ethernet Adapter:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 192.168.168.1
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:2579:bc92:c99c:5444%eth8
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Network Adapter Multiplexor Default Miniport:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Network Adapter Multiplexor Driver:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 192.168.2.127
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fda9:1d8e:ea58:0:49cd:e91c:3f8f:a30d
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fda9:1d8e:ea58:0:5d53:feb:b2d5:b569
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:49cd:e91c:3f8f:a30d%eth10
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Remote NDIS based Internet Sharing Device:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface VirtualBox Host-Only Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface VirtualBox Host-Only Ethernet Adapter-VirtualBox NDIS Light-Weight Filter-0000:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface VirtualBox Host-Only Ethernet Adapter-QoS Packet Scheduler-0000:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface VirtualBox Host-Only Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Intel(R) Dual Band Wireless-AC 7260-WFP Native MAC Layer LightWeight Filter-0000:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Intel(R) Dual Band Wireless-AC 7260-Virtual WiFi Filter Driver-0000:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Intel(R) Dual Band Wireless-AC 7260-Native WiFi Filter Driver-0000:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface MsBridge:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Network Adapter Multiplexor Driver-WFP Native MAC Layer LightWeight Filter-0000:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Network Adapter Multiplexor Driver-Microsoft Network Bridge-0000:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Network Adapter Multiplexor Driver-VirtualBox NDIS Light-Weight Filter-0000:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Network Adapter Multiplexor Driver-QoS Packet Scheduler-0000:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Microsoft Network Adapter Multiplexor Driver-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Von Microsoft gehosteter, virtueller Netzwerkadapter-WFP Native MAC Layer LightWeight Filter-0000:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Von Microsoft gehosteter, virtueller Netzwerkadapter-Native WiFi Filter Driver-0000:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Von Microsoft gehosteter, virtueller Netzwerkadapter-VirtualBox NDIS Light-Weight Filter-0000:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Von Microsoft gehosteter, virtueller Netzwerkadapter-QoS Packet Scheduler-0000:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Von Microsoft gehosteter, virtueller Netzwerkadapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Virtueller Microsoft-Adapter für direktes WiFi-WFP Native MAC Layer LightWeight Filter-0000:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Virtueller Microsoft-Adapter für direktes WiFi-Native WiFi Filter Driver-0000:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Virtueller Microsoft-Adapter für direktes WiFi-VirtualBox NDIS Light-Weight Filter-0000:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Virtueller Microsoft-Adapter für direktes WiFi-QoS Packet Scheduler-0000:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface Virtueller Microsoft-Adapter für direktes WiFi-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2015-12-15 18:47:58.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- INITIALIZED diagnostics END ---
+2015-12-15 18:47:58.882+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.relationshiptypestore.db.names non clean shutdown detected
+2015-12-15 18:47:58.898+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2015-12-15 18:47:58.898+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.relationshiptypestore.db non clean shutdown detected
+2015-12-15 18:47:58.898+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2015-12-15 18:47:58.898+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.labeltokenstore.db.names non clean shutdown detected
+2015-12-15 18:47:58.898+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore.labeltokenstore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=152b)
+2015-12-15 18:47:58.898+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.labeltokenstore.db non clean shutdown detected
+2015-12-15 18:47:58.898+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore.labeltokenstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=10b)
+2015-12-15 18:47:58.898+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.propertystore.db.strings non clean shutdown detected
+2015-12-15 18:47:58.898+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore.propertystore.db.strings] brickCount=0 brickSize=197120b mappedMem=197132288b (storeSize=128b)
+2015-12-15 18:47:58.898+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.propertystore.db.index.keys non clean shutdown detected
+2015-12-15 18:47:58.898+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=152b)
+2015-12-15 18:47:58.898+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.propertystore.db.index non clean shutdown detected
+2015-12-15 18:47:58.898+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=18b)
+2015-12-15 18:47:58.898+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.propertystore.db.arrays non clean shutdown detected
+2015-12-15 18:47:58.898+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore.propertystore.db.arrays] brickCount=0 brickSize=223232b mappedMem=223346688b (storeSize=128b)
+2015-12-15 18:47:58.913+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.propertystore.db non clean shutdown detected
+2015-12-15 18:47:58.913+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore.propertystore.db] brickCount=0 brickSize=2317320b mappedMem=231735296b (storeSize=0b)
+2015-12-15 18:47:58.913+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.relationshipstore.db non clean shutdown detected
+2015-12-15 18:47:58.913+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore.relationshipstore.db] brickCount=0 brickSize=2841618b mappedMem=284164096b (storeSize=0b)
+2015-12-15 18:47:58.913+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.nodestore.db.labels non clean shutdown detected
+2015-12-15 18:47:58.913+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore.nodestore.db.labels] brickCount=0 brickSize=0b mappedMem=0b (storeSize=68b)
+2015-12-15 18:47:58.929+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.nodestore.db non clean shutdown detected
+2015-12-15 18:47:58.929+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore.nodestore.db] brickCount=0 brickSize=639630b mappedMem=63963136b (storeSize=0b)
+2015-12-15 18:47:58.929+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.schemastore.db non clean shutdown detected
+2015-12-15 18:47:58.929+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore.schemastore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=64b)
+2015-12-15 18:47:58.929+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.relationshipgroupstore.db non clean shutdown detected
+2015-12-15 18:47:58.929+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore.relationshipgroupstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=25b)
+2015-12-15 18:47:58.929+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore non clean shutdown detected
+2015-12-15 18:47:58.929+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [hello.db\neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=81b)
+2015-12-15 18:47:59.101+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Non clean shutdown detected on log [hello.db\nioneo_logical.log.1]. Recovery started ...
+2015-12-15 18:47:59.101+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: [hello.db\nioneo_logical.log.1] logVersion=0 with committed tx=1
+2015-12-15 18:47:59.241+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: [hello.db\nioneo_logical.log.1] entries found=30 lastEntryPos=1410
+2015-12-15 18:47:59.241+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Opened logical log [hello.db\nioneo_logical.log.1] version=0, lastTxId=8 (recovered)
+2015-12-15 18:47:59.241+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: XaResourceManager[nioneo_logical.log] sorting 1 xids
+2015-12-15 18:47:59.241+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: XaResourceManager[nioneo_logical.log] checkRecoveryComplete 0 xids
+2015-12-15 18:47:59.335+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.relationshiptypestore.db.names rebuild id generator, highId=2 defragged count=0
+2015-12-15 18:47:59.351+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.relationshiptypestore.db rebuild id generator, highId=0 defragged count=0
+2015-12-15 18:47:59.366+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.labeltokenstore.db.names rebuild id generator, highId=5 defragged count=0
+2015-12-15 18:47:59.398+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.labeltokenstore.db rebuild id generator, highId=2 defragged count=0
+2015-12-15 18:47:59.413+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.propertystore.db.index.keys rebuild id generator, highId=5 defragged count=0
+2015-12-15 18:47:59.444+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.propertystore.db.index rebuild id generator, highId=2 defragged count=0
+2015-12-15 18:47:59.460+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.propertystore.db.strings rebuild id generator, highId=2 defragged count=0
+2015-12-15 18:47:59.476+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.propertystore.db.arrays rebuild id generator, highId=2 defragged count=0
+2015-12-15 18:48:00.398+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.propertystore.db rebuild id generator, highId=3 defragged count=0
+2015-12-15 18:48:00.413+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.relationshipstore.db rebuild id generator, highId=0 defragged count=0
+2015-12-15 18:48:00.429+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.nodestore.db.labels rebuild id generator, highId=2 defragged count=0
+2015-12-15 18:48:01.045+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.nodestore.db rebuild id generator, highId=3 defragged count=0
+2015-12-15 18:48:01.061+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.schemastore.db rebuild id generator, highId=2 defragged count=0
+2015-12-15 18:48:01.061+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore.relationshipgroupstore.db rebuild id generator, highId=1 defragged count=0
+2015-12-15 18:48:01.077+0000 INFO  [o.n.k.i.n.s.StoreFactory]: hello.db\neostore rebuild id generator, highId=9 defragged count=0
+2015-12-15 18:48:01.077+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: XaResourceManager[nioneo_logical.log] recovery completed.
+2015-12-15 18:48:01.077+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Recovery on log [hello.db\nioneo_logical.log.1] completed.
+2015-12-15 18:48:01.092+0000 INFO  [o.n.k.i.t.TxManager]: TM opening log: hello.db\tm_tx_log.1
+2015-12-15 18:48:01.123+0000 INFO  [o.n.k.i.t.KernelHealth]: Kernel health set to OK
+2015-12-15 18:48:01.139+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Non clean shutdown detected on log [hello.db\index\lucene.log.1]. Recovery started ...
+2015-12-15 18:48:01.139+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: [hello.db\index\lucene.log.1] logVersion=0 with committed tx=1
+2015-12-15 18:48:01.155+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: [hello.db\index\lucene.log.1] entries found=4 lastEntryPos=219
+2015-12-15 18:48:01.155+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Opened logical log [hello.db\index\lucene.log.1] version=0, lastTxId=2 (recovered)
+2015-12-15 18:48:01.155+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: XaResourceManager[lucene.log] sorting 0 xids
+2015-12-15 18:48:01.155+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: XaResourceManager[lucene.log] checkRecoveryComplete 0 xids
+2015-12-15 18:48:01.155+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: XaResourceManager[lucene.log] recovery completed.
+2015-12-15 18:48:01.155+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Recovery on log [hello.db\index\lucene.log.1] completed.
+2015-12-15 18:48:01.170+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2015-12-15 18:48:01.170+0000 INFO  [o.n.k.i.DiagnosticsManager]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId{creationTime=1447825504542, randomId=-4352446933553122534, storeVersion=14406081294923270, upgradeTime=1447825504542, upgradeId=-4352446933553122534}
+2015-12-15 18:48:01.170+0000 INFO  [o.n.k.i.DiagnosticsManager]: Kernel version: Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.1.5
+2015-12-15 18:48:01.170+0000 INFO  [o.n.k.i.DiagnosticsManager]: Neo4j component versions:
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 1.9 (neo4j-cypher-compiler-1.9), version: 2.0.3; revision: 2.0.3:2.0-maint:72/307c563c11b75fdc71cfa6df05daf9b08d6c37dc
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j Community (neo4j), version: 2.1.5; revision: 2.1.5:2.1-maint:529/45c3cc04946c2b0e243e48c8252e40cb85931744
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Commons (neo4j-cypher-commons), version: 2.1.5; revision: 2.1.5:2.1-maint:529/45c3cc04946c2b0e243e48c8252e40cb85931744
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neo4j-udc, version: 2.1.5; revision: 2.1.5:2.1-maint:529/45c3cc04946c2b0e243e48c8252e40cb85931744
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Lucene Index (neo4j-lucene-index), version: 2.1.5; revision: 2.1.5:2.1-maint:529/45c3cc04946c2b0e243e48c8252e40cb85931744
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 2.0 (neo4j-cypher-compiler-2.0), version: 2.0.3; revision: 2.0.3:2.0-maint:72/307c563c11b75fdc71cfa6df05daf9b08d6c37dc
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.1.5; revision: 2.1.5:2.1-maint:529/45c3cc04946c2b0e243e48c8252e40cb85931744
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Matching (neo4j-graph-matching), version: 2.1.5; revision: 2.1.5:2.1-maint:529/45c3cc04946c2b0e243e48c8252e40cb85931744
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - JMX support (neo4j-jmx), version: 2.1.5; revision: 2.1.5:2.1-maint:529/45c3cc04946c2b0e243e48c8252e40cb85931744
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher (neo4j-cypher), version: 2.1.5; revision: 2.1.5:2.1-maint:529/45c3cc04946c2b0e243e48c8252e40cb85931744
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Algorithms (neo4j-graph-algo), version: 2.1.5; revision: 2.1.5:2.1-maint:529/45c3cc04946c2b0e243e48c8252e40cb85931744
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]: Store versions:
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]: Store versions:
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NeoStore v0.A.3
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   SchemaStore v0.A.3
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NodeStore v0.A.3
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipStore v0.A.3
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipTypeStore v0.A.3
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   LabelTokenStore v0.A.3
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyStore v0.A.3
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyIndexStore v0.A.3
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   StringPropertyStore v0.A.3
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   ArrayPropertyStore v0.A.3
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipGroupStore v0.A.3
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]: Id usage:
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]: Id usage:
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   SchemaStore: used=2 high=1
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NodeStore: used=3 high=2
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipStore: used=0 high=-1
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipTypeStore: used=0 high=-1
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   LabelTokenStore: used=2 high=1
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyStore: used=3 high=2
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyIndexStore: used=2 high=1
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   StringPropertyStore: used=2 high=1
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   ArrayPropertyStore: used=2 high=1
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipGroupStore: used=1 high=0
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2015-12-15 18:48:01.202+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2015-12-15 18:48:01.217+0000 INFO  [o.n.k.i.DiagnosticsManager]: Disk space on partition (Total / Free / Free %): 246655479808 / 40887226368 / 16
+Storage files: (filename : modification date - size)
+2015-12-15 18:48:01.217+0000 INFO  [o.n.k.i.DiagnosticsManager]:   active_tx_log: 2015-12-15T19:42:33+0100 - 11,00 B
+2015-12-15 18:48:01.217+0000 INFO  [o.n.k.i.DiagnosticsManager]:   index:
+2015-12-15 18:48:01.217+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene-store.db: 2015-12-15T19:42:33+0100 - 40,00 B
+2015-12-15 18:48:01.217+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.1: 2015-12-15T19:47:35+0100 - 219,00 B
+2015-12-15 18:48:01.217+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.active: 2015-12-15T19:42:33+0100 - 4,00 B
+2015-12-15 18:48:01.217+0000 INFO  [o.n.k.i.DiagnosticsManager]:   - Total: 2015-12-15T19:42:33+0100 - 263,00 B
+2015-12-15 18:48:01.233+0000 INFO  [o.n.k.i.DiagnosticsManager]:   index.db: 2015-12-15T19:42:33+0100 - 119,00 B
+2015-12-15 18:48:01.233+0000 INFO  [o.n.k.i.DiagnosticsManager]:   lock: 2015-12-15T19:42:34+0100 - 0,00 B
+2015-12-15 18:48:01.233+0000 INFO  [o.n.k.i.DiagnosticsManager]:   messages.log: 2015-12-15T19:47:35+0100 - 162,17 kB
+2015-12-15 18:48:01.233+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore: 2015-12-15T19:47:59+0100 - 81,00 B
+2015-12-15 18:48:01.233+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.id: 2015-12-15T19:48:01+0100 - 9,00 B
+2015-12-15 18:48:01.233+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db: 2015-12-15T19:47:59+0100 - 10,00 B
+2015-12-15 18:48:01.233+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.id: 2015-12-15T19:47:59+0100 - 9,00 B
+2015-12-15 18:48:01.233+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.names: 2015-12-15T19:47:59+0100 - 152,00 B
+2015-12-15 18:48:01.233+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.names.id: 2015-12-15T19:47:59+0100 - 9,00 B
+2015-12-15 18:48:01.233+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db: 2015-12-15T19:47:59+0100 - 624,64 kB
+2015-12-15 18:48:01.233+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.id: 2015-12-15T19:48:00+0100 - 9,00 B
+2015-12-15 18:48:01.233+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.labels: 2015-12-15T19:42:33+0100 - 68,00 B
+2015-12-15 18:48:01.233+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.labels.id: 2015-12-15T19:48:00+0100 - 9,00 B
+2015-12-15 18:48:01.233+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db: 2015-12-15T19:47:59+0100 - 2,21 MB
+2015-12-15 18:48:01.233+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.arrays: 2015-12-15T19:42:33+0100 - 128,00 B
+2015-12-15 18:48:01.233+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.arrays.id: 2015-12-15T19:47:59+0100 - 9,00 B
+2015-12-15 18:48:01.248+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.id: 2015-12-15T19:47:59+0100 - 9,00 B
+2015-12-15 18:48:01.248+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index: 2015-12-15T19:47:59+0100 - 18,00 B
+2015-12-15 18:48:01.248+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.id: 2015-12-15T19:47:59+0100 - 9,00 B
+2015-12-15 18:48:01.248+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.keys: 2015-12-15T19:47:59+0100 - 152,00 B
+2015-12-15 18:48:01.248+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.keys.id: 2015-12-15T19:47:59+0100 - 9,00 B
+2015-12-15 18:48:01.248+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.strings: 2015-12-15T19:42:34+0100 - 128,00 B
+2015-12-15 18:48:01.248+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.strings.id: 2015-12-15T19:47:59+0100 - 9,00 B
+2015-12-15 18:48:01.248+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipgroupstore.db: 2015-12-15T19:42:33+0100 - 25,00 B
+2015-12-15 18:48:01.248+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipgroupstore.db.id: 2015-12-15T19:48:01+0100 - 9,00 B
+2015-12-15 18:48:01.248+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipstore.db: 2015-12-15T19:42:34+0100 - 0,00 B
+2015-12-15 18:48:01.248+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipstore.db.id: 2015-12-15T19:48:00+0100 - 9,00 B
+2015-12-15 18:48:01.248+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db: 2015-12-15T19:42:33+0100 - 0,00 B
+2015-12-15 18:48:01.248+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.id: 2015-12-15T19:47:59+0100 - 9,00 B
+2015-12-15 18:48:01.248+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.names: 2015-12-15T19:42:33+0100 - 38,00 B
+2015-12-15 18:48:01.248+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.names.id: 2015-12-15T19:47:59+0100 - 9,00 B
+2015-12-15 18:48:01.248+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.schemastore.db: 2015-12-15T19:42:33+0100 - 64,00 B
+2015-12-15 18:48:01.264+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.schemastore.db.id: 2015-12-15T19:48:01+0100 - 9,00 B
+2015-12-15 18:48:01.264+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.1: 2015-12-15T19:46:25+0100 - 1,38 kB
+2015-12-15 18:48:01.264+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.active: 2015-12-15T19:42:33+0100 - 4,00 B
+2015-12-15 18:48:01.264+0000 INFO  [o.n.k.i.DiagnosticsManager]:   schema:
+2015-12-15 18:48:01.264+0000 INFO  [o.n.k.i.DiagnosticsManager]:     label:
+2015-12-15 18:48:01.264+0000 INFO  [o.n.k.i.DiagnosticsManager]:       lucene:
+2015-12-15 18:48:01.264+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _2.fdt: 2015-12-15T19:47:59+0100 - 21,00 B
+2015-12-15 18:48:01.264+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _2.fdx: 2015-12-15T19:47:59+0100 - 12,00 B
+2015-12-15 18:48:01.264+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _2.fnm: 2015-12-15T19:47:59+0100 - 26,00 B
+2015-12-15 18:48:01.264+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _2.frq: 2015-12-15T19:47:59+0100 - 3,00 B
+2015-12-15 18:48:01.264+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _2.nrm: 2015-12-15T19:47:59+0100 - 4,00 B
+2015-12-15 18:48:01.264+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _2.tii: 2015-12-15T19:47:59+0100 - 35,00 B
+2015-12-15 18:48:01.264+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _2.tis: 2015-12-15T19:47:59+0100 - 45,00 B
+2015-12-15 18:48:01.264+0000 INFO  [o.n.k.i.DiagnosticsManager]:         segments.gen: 2015-12-15T19:47:59+0100 - 20,00 B
+2015-12-15 18:48:01.280+0000 INFO  [o.n.k.i.DiagnosticsManager]:         segments_2: 2015-12-15T19:47:59+0100 - 242,00 B
+2015-12-15 18:48:01.280+0000 INFO  [o.n.k.i.DiagnosticsManager]:         write.lock: 2015-12-15T19:43:36+0100 - 0,00 B
+2015-12-15 18:48:01.280+0000 INFO  [o.n.k.i.DiagnosticsManager]:       - Total: 2015-12-15T19:47:59+0100 - 408,00 B
+2015-12-15 18:48:01.280+0000 INFO  [o.n.k.i.DiagnosticsManager]:     - Total: 2015-12-15T19:43:36+0100 - 408,00 B
+2015-12-15 18:48:01.280+0000 INFO  [o.n.k.i.DiagnosticsManager]:   - Total: 2015-12-15T19:42:33+0100 - 408,00 B
+2015-12-15 18:48:01.280+0000 INFO  [o.n.k.i.DiagnosticsManager]:   store_lock: 2015-12-15T19:42:34+0100 - 0,00 B
+2015-12-15 18:48:01.280+0000 INFO  [o.n.k.i.DiagnosticsManager]:   tm_tx_log.1: 2015-12-15T19:42:33+0100 - 0,00 B
+2015-12-15 18:48:01.280+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2015-12-15 18:48:01.327+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Database is now ready
